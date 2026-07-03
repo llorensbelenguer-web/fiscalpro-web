@@ -2,114 +2,174 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="FiscalPro | Asesoría Fiscal de Vanguardia">
+<Layout title="FiscalPro | Consultoría Fiscal de Alto Nivel">
 	<main>
-		<!-- Hero Section con gradiente moderno -->
-		<section class="relative py-24 px-6 overflow-hidden bg-white">
-			<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-10 pointer-events-none">
-				<div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-				<div class="absolute top-0 right-1/4 w-96 h-96 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+		<!-- Hero Section Corporativa -->
+		<section class="relative py-28 px-6 bg-slate-900 overflow-hidden">
+			<div class="absolute inset-0 opacity-20">
+				<div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; filter: grayscale(100%);"></div>
 			</div>
 			
-			<div class="relative max-w-5xl mx-auto text-center">
-				<span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-50 rounded-full">Consultoría Inteligente</span>
-				<h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-8 tracking-tight">
-					Simplificamos tu <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Gestión Fiscal</span>
+			<div class="relative max-w-6xl mx-auto text-center">
+				<h1 class="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter">
+					FISCAL<span class="text-blue-500">PRO</span>
 				</h1>
-				<p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-					La asesoría que se adapta a los nuevos tiempos. Especialistas en optimización tributaria para el ecosistema digital y empresarial.
+				<h2 class="text-3xl md:text-4xl font-bold text-slate-200 mb-6">
+					Excelencia en Consultoría Tributaria
+				</h2>
+				<p class="text-xl text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+					Soluciones integrales para la optimización de activos y cumplimiento normativo. 
+					Lideramos la transformación digital de la gestión fiscal para empresas y autónomos.
 				</p>
-				<div class="flex flex-col sm:flex-row justify-center gap-4">
-					<a href="/fiscalpro-web/contacto" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-700 transition-all transform hover:-translate-y-1 shadow-xl">
-						Solicitar Auditoría Gratis
+				<div class="flex flex-col sm:flex-row justify-center gap-6">
+					<a href="/fiscalpro-web/contacto" class="px-10 py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition-all shadow-xl">
+						Agendar Videollamada
 					</a>
-					<a href="/fiscalpro-web/calculadora" class="px-8 py-4 bg-white text-slate-900 border-2 border-slate-200 rounded-2xl font-bold hover:border-blue-600 hover:text-blue-600 transition-all transform hover:-translate-y-1">
-						Probar Calculadora
+					<a href="/fiscalpro-web/servicios" class="px-10 py-4 bg-transparent text-white border-2 border-slate-700 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition-all">
+						Portafolio de Servicios
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<!-- Sección de Pestañas Interactivas -->
-		<section class="max-w-6xl mx-auto py-20 px-6">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl font-bold text-slate-900">Nuestras Áreas de Experto</h2>
-				<p class="text-slate-500 mt-2">Haz clic en cada pestaña para conocer los detalles</p>
+		<!-- Sección de Pestañas Corporativas con Imágenes/Iconos Nítidos -->
+		<section class="max-w-6xl mx-auto py-24 px-6">
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Soluciones Especializadas</h2>
+				<div class="w-20 h-1 bg-blue-600 mx-auto"></div>
 			</div>
 
-			<div class="bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden">
-				<!-- Navegación de Pestañas -->
-				<div class="flex border-b border-slate-100 bg-slate-50/50">
-					<button class="tab-btn flex-1 py-5 px-4 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:bg-white active-tab" data-tab="autonomos">
-						💼 Autónomos
+			<div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+				<!-- Navegación de Pestañas (Estilo Tabs Corporativo) -->
+				<div class="flex flex-wrap border-b border-slate-200 bg-slate-50">
+					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 active-tab flex items-center justify-center gap-3" data-tab="autonomos">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+						Autónomos
 					</button>
-					<button class="tab-btn flex-1 py-5 px-4 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:bg-white" data-tab="pymes">
-						🏢 PYMES
+					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 flex items-center justify-center gap-3" data-tab="pymes">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+						PYMES
 					</button>
-					<button class="tab-btn flex-1 py-5 px-4 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:bg-white" data-tab="auditoria">
-						⚖️ Auditoría
+					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 flex items-center justify-center gap-3" data-tab="irpf">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><path d="M2 12h20"/><path d="m5 7 3 5-3 5"/><path d="m19 7-3 5 3 5"/></svg>
+						Gestión IRPF
+					</button>
+					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 flex items-center justify-center gap-3" data-tab="auditoria">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+						Auditoría
 					</button>
 				</div>
 
 				<!-- Contenido de Pestañas -->
-				<div class="p-8 md:p-12">
+				<div class="p-10">
+					<!-- Pestaña Autónomos -->
 					<div id="autonomos" class="tab-content block animate-fadeIn">
-						<div class="grid md:grid-cols-2 gap-12 items-center">
-							<div>
-								<h3 class="text-3xl font-bold mb-4 text-blue-900">Para el profesional independiente</h3>
-								<p class="text-slate-600 mb-6 text-lg">Olvídate de los papeles y las facturas. Gestionamos tu día a día para que maximices tus ingresos y minimices tus impuestos.</p>
-								<ul class="space-y-4">
-									<li class="flex items-start gap-3">
-										<span class="bg-blue-100 p-1 rounded-full text-blue-600 text-xs mt-1">✓</span>
-										<div><strong>Alta Express:</strong> Hacienda y Seguridad Social en 24h.</div>
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-6">
+								<h3 class="text-3xl font-bold text-blue-950">Gestión Integral Freelance</h3>
+								<p class="text-slate-600 text-lg">Control total de su facturación y cumplimiento de hitos fiscales trimestrales.</p>
+								<ul class="space-y-4 text-slate-700">
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Alta en RETA:</strong> Tramitación inmediata y elección de tramos.
 									</li>
-									<li class="flex items-start gap-3">
-										<span class="bg-blue-100 p-1 rounded-full text-blue-600 text-xs mt-1">✓</span>
-										<div><strong>Optimización IRPF:</strong> Aplicamos todas las deducciones posibles.</div>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Modelos 303 y 130:</strong> Elaboración técnica y presentación.
+									</li>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Libros Registro:</strong> Mantenimiento actualizado de ingresos y gastos.
 									</li>
 								</ul>
 							</div>
-							<div class="bg-blue-50 rounded-2xl p-8 border border-blue-100">
-								<h4 class="font-bold mb-4">Pack Autónomo desde</h4>
-								<div class="text-5xl font-black text-blue-600 mb-2">49€<span class="text-sm font-normal text-slate-400">/mes</span></div>
-								<p class="text-sm text-slate-500">Incluye asesoría ilimitada por WhatsApp y presentación de todos los modelos.</p>
+							<div class="relative group overflow-hidden rounded-2xl">
+								<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Gestión Autónomos" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
+								<div class="absolute inset-0 bg-blue-900/10"></div>
 							</div>
 						</div>
 					</div>
 
+					<!-- Pestaña PYMES -->
 					<div id="pymes" class="tab-content hidden animate-fadeIn">
-						<div class="grid md:grid-cols-2 gap-12 items-center">
-							<div>
-								<h3 class="text-3xl font-bold mb-4 text-indigo-900">Escalabilidad para tu Empresa</h3>
-								<p class="text-slate-600 mb-6 text-lg">Servicio integral de contabilidad y fiscalidad para sociedades que buscan un partner estratégico.</p>
-								<ul class="space-y-4">
-									<li class="flex items-start gap-3">
-										<span class="bg-indigo-100 p-1 rounded-full text-indigo-600 text-xs mt-1">✓</span>
-										<div><strong>Impuesto de Sociedades:</strong> Estrategias de ahorro anual.</div>
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-6">
+								<h3 class="text-3xl font-bold text-blue-950">Asesoramiento de Sociedades</h3>
+								<p class="text-slate-600 text-lg">Soluciones escalables para el crecimiento y consolidación de su empresa.</p>
+								<ul class="space-y-4 text-slate-700">
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Impuesto de Sociedades:</strong> Estrategia fiscal corporativa.
 									</li>
-									<li class="flex items-start gap-3">
-										<span class="bg-indigo-100 p-1 rounded-full text-indigo-600 text-xs mt-1">✓</span>
-										<div><strong>Cuentas Anuales:</strong> Gestión completa ante el Registro Mercantil.</div>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Cuentas Anuales:</strong> Rigor técnico en el Registro Mercantil.
+									</li>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Nóminas y Contratos:</strong> Soporte en el área de laboral y tributario.
 									</li>
 								</ul>
 							</div>
-							<div class="bg-indigo-50 rounded-2xl p-8 border border-indigo-100">
-								<h4 class="font-bold mb-4">Consultoría PYME</h4>
-								<div class="text-5xl font-black text-indigo-600 mb-2">Consultar</div>
-								<p class="text-sm text-slate-500">Presupuestos personalizados según volumen de facturación y empleados.</p>
+							<div class="relative group overflow-hidden rounded-2xl">
+								<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Consultoría PYMES" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
+								<div class="absolute inset-0 bg-blue-900/10"></div>
 							</div>
 						</div>
 					</div>
 
+					<!-- Pestaña IRPF -->
+					<div id="irpf" class="tab-content hidden animate-fadeIn">
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-6">
+								<h3 class="text-3xl font-bold text-blue-950">Especialistas en IRPF</h3>
+								<p class="text-slate-600 text-lg">Declaraciones de renta personalizadas maximizando el ahorro del contribuyente.</p>
+								<ul class="space-y-4 text-slate-700">
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Rentas Complejas:</strong> Criptomonedas, valores y divisas.
+									</li>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Deducciones Autonómicas:</strong> Especialistas en la Comunidad Valenciana.
+									</li>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Asesoramiento en Patrimonio:</strong> Optimización de herencias y donaciones.
+									</li>
+								</ul>
+							</div>
+							<div class="relative group overflow-hidden rounded-2xl">
+								<img src="https://images.unsplash.com/photo-1454165833767-027ff33027ef?auto=format&fit=crop&q=80&w=800" alt="Gestión IRPF" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
+								<div class="absolute inset-0 bg-blue-900/10"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pestaña Auditoría -->
 					<div id="auditoria" class="tab-content hidden animate-fadeIn">
-						<div class="text-center max-w-2xl mx-auto py-8">
-							<h3 class="text-3xl font-bold mb-4">Blindaje ante la Administración</h3>
-							<p class="text-slate-600 text-lg mb-8">Protegemos tu patrimonio y tu negocio ante posibles inspecciones y requerimientos de la AEAT.</p>
-							<div class="grid grid-cols-2 gap-4">
-								<div class="p-4 border border-slate-100 rounded-xl bg-slate-50">Defensa en Inspecciones</div>
-								<div class="p-4 border border-slate-100 rounded-xl bg-slate-50">Recursos de Alzada</div>
-								<div class="p-4 border border-slate-100 rounded-xl bg-slate-50">Auditoría Interna</div>
-								<div class="p-4 border border-slate-100 rounded-xl bg-slate-50">Compliance Fiscal</div>
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-6">
+								<h3 class="text-3xl font-bold text-blue-950">Garantía y Seguridad</h3>
+								<p class="text-slate-600 text-lg">Protección jurídica y fiscal ante cualquier requerimiento institucional.</p>
+								<ul class="space-y-4 text-slate-700">
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Inspecciones de Hacienda:</strong> Representación técnica cualificada.
+									</li>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Recursos Administrativos:</strong> Defensa de sus intereses ante errores.
+									</li>
+									<li class="flex items-center gap-3">
+										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+										<strong>Due Diligence:</strong> Auditoría interna preventiva.
+									</li>
+								</ul>
+							</div>
+							<div class="relative group overflow-hidden rounded-2xl">
+								<img src="https://images.unsplash.com/photo-1554224154-71917b212330?auto=format&fit=crop&q=80&w=800" alt="Auditoría" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
+								<div class="absolute inset-0 bg-blue-900/10"></div>
 							</div>
 						</div>
 					</div>
@@ -117,21 +177,14 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- Testimonios / Franja de Confianza -->
-		<section class="bg-slate-900 py-16">
-			<div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-12 text-center">
-				<div class="w-40">
-					<div class="text-3xl font-bold text-white">+500</div>
-					<div class="text-slate-400 text-sm">Autónomos</div>
-				</div>
-				<div class="w-40">
-					<div class="text-3xl font-bold text-white">+10M€</div>
-					<div class="text-slate-400 text-sm">Ahorrados</div>
-				</div>
-				<div class="w-40">
-					<div class="text-3xl font-bold text-white">100%</div>
-					<div class="text-slate-400 text-sm">Online</div>
-				</div>
+		<!-- Call to Action Final -->
+		<section class="bg-blue-700 py-20 px-6 text-center">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl font-bold text-white mb-6">Confíe su tranquilidad a expertos</h2>
+				<p class="text-blue-100 text-xl mb-10">Solicite un análisis preliminar de su situación fiscal sin compromiso.</p>
+				<a href="/fiscalpro-web/contacto" class="bg-white text-blue-700 px-12 py-5 rounded-full font-black uppercase tracking-wider hover:bg-slate-100 transition-all shadow-2xl">
+					Contactar Ahora
+				</a>
 			</div>
 		</section>
 	</main>
@@ -139,14 +192,17 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	.active-tab {
-		@apply border-blue-600 text-blue-600 bg-white;
+		@apply border-blue-700 text-blue-900 bg-white;
 	}
 	@keyframes fadeIn {
-		from { opacity: 0; transform: translateY(10px); }
-		to { opacity: 1; transform: translateY(0); }
+		from { opacity: 0; transform: translateX(10px); }
+		to { opacity: 1; transform: translateX(0); }
 	}
 	.animate-fadeIn {
-		animation: fadeIn 0.4s ease-out forwards;
+		animation: fadeIn 0.3s ease-out forwards;
+	}
+	.tab-btn:focus {
+		outline: none;
 	}
 </style>
 
@@ -159,8 +215,8 @@ import Layout from '../layouts/Layout.astro';
 			const target = tab.getAttribute('data-tab');
 
 			// Update buttons
-			tabs.forEach(t => t.classList.remove('active-tab', 'text-blue-600', 'border-blue-600'));
-			tab.classList.add('active-tab', 'text-blue-600', 'border-blue-600');
+			tabs.forEach(t => t.classList.remove('active-tab', 'text-blue-900', 'border-blue-700'));
+			tab.classList.add('active-tab', 'text-blue-900', 'border-blue-700');
 
 			// Update content
 			contents.forEach(c => {
