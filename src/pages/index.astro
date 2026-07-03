@@ -2,188 +2,126 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="FiscalPro | Consultoría Fiscal de Alto Nivel">
+<Layout title="FiscalPro | Consultoría Fiscal en Valencia">
 	<main>
-		<!-- Hero Section Corporativa -->
-		<section class="relative py-28 px-6 bg-slate-900 overflow-hidden">
-			<div class="absolute inset-0 opacity-20">
-				<div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; filter: grayscale(100%);"></div>
+		<!-- Hero Section con imagen fija de Valencia -->
+		<section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+			<div class="absolute inset-0 z-0">
+				<div class="absolute inset-0 bg-slate-900/60 z-10"></div>
+				<div class="w-full h-full bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&q=80&w=2000');"></div>
 			</div>
 			
-			<div class="relative max-w-6xl mx-auto text-center">
-				<h1 class="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter">
+			<div class="relative z-20 max-w-6xl mx-auto text-center px-6">
+				<h1 class="text-6xl md:text-9xl font-black text-white mb-4 tracking-tighter drop-shadow-2xl">
 					FISCAL<span class="text-blue-500">PRO</span>
 				</h1>
-				<h2 class="text-3xl md:text-4xl font-bold text-slate-200 mb-6">
-					Excelencia en Consultoría Tributaria
+				<h2 class="text-2xl md:text-4xl font-bold text-white/90 mb-8 uppercase tracking-widest">
+					Valencia · Consultoría de Alto Nivel
 				</h2>
-				<p class="text-xl text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-					Soluciones integrales para la optimización de activos y cumplimiento normativo. 
-					Lideramos la transformación digital de la gestión fiscal para empresas y autónomos.
-				</p>
-				<div class="flex flex-col sm:flex-row justify-center gap-6">
-					<a href="/fiscalpro-web/contacto" class="px-10 py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition-all shadow-xl">
-						Agendar Videollamada
+				<div class="flex flex-col sm:row justify-center gap-4">
+					<a href="/fiscalpro-web/contacto" class="px-10 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition-all shadow-xl">
+						Contactar Ahora
 					</a>
-					<a href="/fiscalpro-web/servicios" class="px-10 py-4 bg-transparent text-white border-2 border-slate-700 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition-all">
-						Portafolio de Servicios
+					<a href="https://wa.me/34697368100" target="_blank" class="px-10 py-4 bg-green-600 text-white rounded-full font-bold hover:bg-green-500 transition-all flex items-center justify-center gap-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
+						WhatsApp Directo
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<!-- Sección de Pestañas Corporativas con Imágenes/Iconos Nítidos -->
-		<section class="max-w-6xl mx-auto py-24 px-6">
-			<div class="text-center mb-16">
-				<h2 class="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Soluciones Especializadas</h2>
-				<div class="w-20 h-1 bg-blue-600 mx-auto"></div>
-			</div>
-
-			<div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-				<!-- Navegación de Pestañas (Estilo Tabs Corporativo) -->
-				<div class="flex flex-wrap border-b border-slate-200 bg-slate-50">
-					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 active-tab flex items-center justify-center gap-3" data-tab="autonomos">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-						Autónomos
+		<!-- Sección de Pestañas Mejorada -->
+		<section class="max-w-6xl mx-auto py-24 px-6" id="servicios-tabs">
+			<div class="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+				<!-- Menú de Pestañas -->
+				<div class="flex flex-wrap bg-slate-900">
+					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent active-tab-new" data-target="autonomos">
+						AUTÓNOMOS
 					</button>
-					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 flex items-center justify-center gap-3" data-tab="pymes">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent" data-target="pymes">
 						PYMES
 					</button>
-					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 flex items-center justify-center gap-3" data-tab="irpf">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><path d="M2 12h20"/><path d="m5 7 3 5-3 5"/><path d="m19 7-3 5 3 5"/></svg>
-						Gestión IRPF
+					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent" data-target="irpf">
+						GESTIÓN IRPF
 					</button>
-					<button class="tab-btn flex-1 py-6 px-6 font-bold text-slate-500 border-b-2 border-transparent transition-all hover:text-blue-900 flex items-center justify-center gap-3" data-tab="auditoria">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-						Auditoría
+					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent" data-target="auditoria">
+						AUDITORÍA
 					</button>
 				</div>
 
-				<!-- Contenido de Pestañas -->
-				<div class="p-10">
-					<!-- Pestaña Autónomos -->
-					<div id="autonomos" class="tab-content block animate-fadeIn">
-						<div class="grid md:grid-cols-2 gap-16 items-center">
+				<!-- Contenedor de Contenidos -->
+				<div class="p-8 md:p-16 min-h-[450px]">
+					<div id="autonomos" class="tab-pane block">
+						<div class="grid md:grid-cols-2 gap-12 items-center">
 							<div class="space-y-6">
-								<h3 class="text-3xl font-bold text-blue-950">Gestión Integral Freelance</h3>
-								<p class="text-slate-600 text-lg">Control total de su facturación y cumplimiento de hitos fiscales trimestrales.</p>
-								<ul class="space-y-4 text-slate-700">
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Alta en RETA:</strong> Tramitación inmediata y elección de tramos.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Modelos 303 y 130:</strong> Elaboración técnica y presentación.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Libros Registro:</strong> Mantenimiento actualizado de ingresos y gastos.
-									</li>
+								<h3 class="text-4xl font-black text-slate-900">Autónomos</h3>
+								<p class="text-xl text-slate-600">Gestión fiscal completa para que solo te preocupes de tu trabajo.</p>
+								<ul class="space-y-3 text-slate-700 font-medium">
+									<li>• Altas en 24 horas</li>
+									<li>• Trimestrales (IVA/IRPF)</li>
+									<li>• Libros de registro</li>
 								</ul>
 							</div>
-							<div class="relative group overflow-hidden rounded-2xl">
-								<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Gestión Autónomos" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
-								<div class="absolute inset-0 bg-blue-900/10"></div>
-							</div>
+							<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="Autónomos" />
 						</div>
 					</div>
 
-					<!-- Pestaña PYMES -->
-					<div id="pymes" class="tab-content hidden animate-fadeIn">
-						<div class="grid md:grid-cols-2 gap-16 items-center">
+					<div id="pymes" class="tab-pane hidden">
+						<div class="grid md:grid-cols-2 gap-12 items-center">
 							<div class="space-y-6">
-								<h3 class="text-3xl font-bold text-blue-950">Asesoramiento de Sociedades</h3>
-								<p class="text-slate-600 text-lg">Soluciones escalables para el crecimiento y consolidación de su empresa.</p>
-								<ul class="space-y-4 text-slate-700">
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Impuesto de Sociedades:</strong> Estrategia fiscal corporativa.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Cuentas Anuales:</strong> Rigor técnico en el Registro Mercantil.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Nóminas y Contratos:</strong> Soporte en el área de laboral y tributario.
-									</li>
+								<h3 class="text-4xl font-black text-slate-900">PYMES</h3>
+								<p class="text-xl text-slate-600">Estructura profesional para el crecimiento de tu empresa.</p>
+								<ul class="space-y-3 text-slate-700 font-medium">
+									<li>• Impuesto de Sociedades</li>
+									<li>• Cuentas Anuales</li>
+									<li>• Planificación estratégica</li>
 								</ul>
 							</div>
-							<div class="relative group overflow-hidden rounded-2xl">
-								<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Consultoría PYMES" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
-								<div class="absolute inset-0 bg-blue-900/10"></div>
-							</div>
+							<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="PYMES" />
 						</div>
 					</div>
 
-					<!-- Pestaña IRPF -->
-					<div id="irpf" class="tab-content hidden animate-fadeIn">
-						<div class="grid md:grid-cols-2 gap-16 items-center">
+					<div id="irpf" class="tab-pane hidden">
+						<div class="grid md:grid-cols-2 gap-12 items-center">
 							<div class="space-y-6">
-								<h3 class="text-3xl font-bold text-blue-950">Especialistas en IRPF</h3>
-								<p class="text-slate-600 text-lg">Declaraciones de renta personalizadas maximizando el ahorro del contribuyente.</p>
-								<ul class="space-y-4 text-slate-700">
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Rentas Complejas:</strong> Criptomonedas, valores y divisas.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Deducciones Autonómicas:</strong> Especialistas en la Comunidad Valenciana.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Asesoramiento en Patrimonio:</strong> Optimización de herencias y donaciones.
-									</li>
+								<h3 class="text-4xl font-black text-slate-900">Gestión de IRPF</h3>
+								<p class="text-xl text-slate-600">Maximizamos tus deducciones en la Comunidad Valenciana.</p>
+								<ul class="space-y-3 text-slate-700 font-medium">
+									<li>• Renta y Patrimonio</li>
+									<li>• Deducciones Autonómicas</li>
+									<li>• Revisión de borradores</li>
 								</ul>
 							</div>
-							<div class="relative group overflow-hidden rounded-2xl">
-								<img src="https://images.unsplash.com/photo-1454165833767-027ff33027ef?auto=format&fit=crop&q=80&w=800" alt="Gestión IRPF" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
-								<div class="absolute inset-0 bg-blue-900/10"></div>
-							</div>
+							<!-- FOTO ESPECÍFICA IRPF -->
+							<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="IRPF Valencia" />
 						</div>
 					</div>
 
-					<!-- Pestaña Auditoría -->
-					<div id="auditoria" class="tab-content hidden animate-fadeIn">
-						<div class="grid md:grid-cols-2 gap-16 items-center">
+					<div id="auditoria" class="tab-pane hidden">
+						<div class="grid md:grid-cols-2 gap-12 items-center">
 							<div class="space-y-6">
-								<h3 class="text-3xl font-bold text-blue-950">Garantía y Seguridad</h3>
-								<p class="text-slate-600 text-lg">Protección jurídica y fiscal ante cualquier requerimiento institucional.</p>
-								<ul class="space-y-4 text-slate-700">
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Inspecciones de Hacienda:</strong> Representación técnica cualificada.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Recursos Administrativos:</strong> Defensa de sus intereses ante errores.
-									</li>
-									<li class="flex items-center gap-3">
-										<div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-										<strong>Due Diligence:</strong> Auditoría interna preventiva.
-									</li>
+								<h3 class="text-4xl font-black text-slate-900">Auditoría</h3>
+								<p class="text-xl text-slate-600">Seguridad jurídica ante cualquier inspección.</p>
+								<ul class="space-y-3 text-slate-700 font-medium">
+									<li>• Defensa ante la AEAT</li>
+									<li>• Auditoría preventiva</li>
+									<li>• Recursos administrativos</li>
 								</ul>
 							</div>
-							<div class="relative group overflow-hidden rounded-2xl">
-								<img src="https://images.unsplash.com/photo-1554224154-71917b212330?auto=format&fit=crop&q=80&w=800" alt="Auditoría" class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105" />
-								<div class="absolute inset-0 bg-blue-900/10"></div>
-							</div>
+							<img src="https://images.unsplash.com/photo-1554224154-71917b212330?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="Auditoría" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Call to Action Final -->
-		<section class="bg-blue-700 py-20 px-6 text-center">
-			<div class="max-w-4xl mx-auto">
-				<h2 class="text-4xl font-bold text-white mb-6">Confíe su tranquilidad a expertos</h2>
-				<p class="text-blue-100 text-xl mb-10">Solicite un análisis preliminar de su situación fiscal sin compromiso.</p>
-				<a href="/fiscalpro-web/contacto" class="bg-white text-blue-700 px-12 py-5 rounded-full font-black uppercase tracking-wider hover:bg-slate-100 transition-all shadow-2xl">
-					Contactar Ahora
+		<!-- Footer de Contacto Rápido -->
+		<section class="bg-slate-50 py-16 border-t border-slate-200">
+			<div class="max-w-4xl mx-auto text-center px-6">
+				<h2 class="text-3xl font-bold mb-8">¿Hablamos?</h2>
+				<a href="https://wa.me/34697368100" class="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white px-8 py-5 rounded-2xl text-2xl font-bold transition-transform hover:scale-105 shadow-xl">
+					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
+					WhatsApp: 697 368 100
 				</a>
 			</div>
 		</section>
@@ -191,41 +129,38 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-	.active-tab {
-		@apply border-blue-700 text-blue-900 bg-white;
+	.active-tab-new {
+		@apply border-blue-500 text-white bg-slate-800/50;
 	}
-	@keyframes fadeIn {
-		from { opacity: 0; transform: translateX(10px); }
-		to { opacity: 1; transform: translateX(0); }
+	.tab-pane {
+		animation: slideIn 0.3s ease-out;
 	}
-	.animate-fadeIn {
-		animation: fadeIn 0.3s ease-out forwards;
-	}
-	.tab-btn:focus {
-		outline: none;
+	@keyframes slideIn {
+		from { opacity: 0; transform: translateY(10px); }
+		to { opacity: 1; transform: translateY(0); }
 	}
 </style>
 
 <script is:inline>
-	const tabs = document.querySelectorAll('.tab-btn');
-	const contents = document.querySelectorAll('.tab-content');
+	const buttons = document.querySelectorAll('.tab-btn');
+	const panes = document.querySelectorAll('.tab-pane');
 
-	tabs.forEach(tab => {
-		tab.addEventListener('click', () => {
-			const target = tab.getAttribute('data-tab');
+	buttons.forEach(btn => {
+		btn.addEventListener('click', () => {
+			const target = btn.getAttribute('data-target');
 
-			// Update buttons
-			tabs.forEach(t => t.classList.remove('active-tab', 'text-blue-900', 'border-blue-700'));
-			tab.classList.add('active-tab', 'text-blue-900', 'border-blue-700');
+			// Botones
+			buttons.forEach(b => b.classList.remove('active-tab-new', 'text-white'));
+			btn.classList.add('active-tab-new', 'text-white');
 
-			// Update content
-			contents.forEach(c => {
-				if (c.id === target) {
-					c.classList.remove('hidden');
-					c.classList.add('block');
+			// Contenidos (Ocultar todos y mostrar solo el seleccionado)
+			panes.forEach(p => {
+				if (p.id === target) {
+					p.classList.remove('hidden');
+					p.classList.add('block');
 				} else {
-					c.classList.add('hidden');
-					c.classList.remove('block');
+					p.classList.add('hidden');
+					p.classList.remove('block');
 				}
 			});
 		});
