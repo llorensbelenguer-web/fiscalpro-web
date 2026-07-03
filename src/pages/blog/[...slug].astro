@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+	const blogEntries = await getCollection('blog');
+	return blogEntries.map(entry => ({
+		params: { slug: entry.slug }, props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+	<article class="max-w-3xl mx-auto py-20 px-6 prose prose-slate lg:prose-xl">
+		<div class="mb-8">
+			<span class="text-blue-600 font-bold uppercase tracking-widest text-sm">{entry.data.category}</span>
+			<h1 class="text-4xl font-extrabold mt-2">{entry.data.title}</h1>
+			<p class="text-slate-500 mt-2">{entry.data.date}</p>
+		</div>
+		<div class="mt-8 text-slate-700 leading-relaxed">
+			<Content />
+		</div>
+	</article>
+</Layout>
+
+<style is:global>
+	/* Basic styling for markdown content if Tailwind Typography isn't installed */
+	article h1 { @apply text-4xl font-bold mb-6; }
+	article h2 { @apply text-2xl font-bold mt-10 mb-4; }
+	article h3 { @apply text-xl font-bold mt-8 mb-2; }
+	article p { @apply mb-4; }
+	article ul { @apply list-disc ml-6 mb-4; }
+	article li { @apply mb-2; }
+</style>
