@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Calculadora Fiscal | FiscalPro">
+	<main class="max-w-4xl mx-auto py-20 px-6 text-center">
+		<h1 class="text-4xl font-bold mb-6">Calculadora Fiscal Interactiva</h1>
+		<p class="text-lg text-slate-600 mb-12">
+			Calcula rápidamente el desglose de tus facturas de forma sencilla.
+		</p>
+
+		<div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-xl max-w-lg mx-auto text-left">
+			<div class="mb-6">
+				<label class="block text-sm font-bold mb-2 text-slate-700">Base Imponible (€)</label>
+				<input 
+					type="number" 
+					id="baseInput" 
+					placeholder="Ej: 1000" 
+					class="w-full border border-slate-300 p-4 rounded-xl text-xl focus:ring-4 focus:ring-blue-100 outline-none transition"
+				/>
+			</div>
+
+			<div class="mb-8">
+				<label class="block text-sm font-bold mb-2 text-slate-700">Tipo de IVA (%)</label>
+				<select id="ivaSelect" class="w-full border border-slate-300 p-4 rounded-xl text-lg bg-slate-50 outline-none">
+					<option value="0.21">General (21%)</option>
+					<option value="0.10">Reducido (10%)</option>
+					<option value="0.04">Superreducido (4%)</option>
+				</select>
+			</div>
+
+			<div class="bg-blue-50 p-6 rounded-2xl space-y-4">
+				<div class="flex justify-between text-slate-600">
+					<span>Base Imponible:</span>
+					<span id="resBase" class="font-mono">0,00 €</span>
+				</div>
+				<div class="flex justify-between text-slate-600 border-b border-blue-100 pb-4">
+					<span>Cuota IVA:</span>
+					<span id="resIva" class="font-mono">0,00 €</span>
+				</div>
+				<div class="flex justify-between text-blue-900 text-2xl font-bold">
+					<span>Total:</span>
+					<span id="resTotal" class="font-mono text-blue-700">0,00 €</span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script is:inline>
+		const input = document.getElementById('baseInput');
+		const select = document.getElementById('ivaSelect');
+		
+		function calculate() {
+			const base = parseFloat(input.value) || 0;
+			const rate = parseFloat(select.value);
+			const iva = base * rate;
+			const total = base + iva;
+
+			document.getElementById('resBase').innerText = base.toLocaleString('es-ES', { minimumFractionDigits: 2 }) + ' €';
+			document.getElementById('resIva').innerText = iva.toLocaleString('es-ES', { minimumFractionDigits: 2 }) + ' €';
+			document.getElementById('resTotal').innerText = total.toLocaleString('es-ES', { minimumFractionDigits: 2 }) + ' €';
+		}
+
+		input.addEventListener('input', calculate);
+		select.addEventListener('change', calculate);
+	</script>
+</Layout>

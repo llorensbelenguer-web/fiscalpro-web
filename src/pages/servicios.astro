@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Nuestros Servicios | FiscalPro">
+	<main class="max-w-6xl mx-auto py-20 px-6">
+		<h1 class="text-4xl font-bold mb-4 text-center">Servicios de Consultoría</h1>
+		<p class="text-lg text-slate-600 mb-16 text-center max-w-2xl mx-auto">
+			Soluciones fiscales a medida para que tu única preocupación sea hacer crecer tu negocio.
+		</p>
+
+		<div class="space-y-20">
+			<!-- Autónomos -->
+			<div class="flex flex-col md:flex-row gap-12 items-center">
+				<div class="flex-1">
+					<h2 class="text-3xl font-bold mb-4">Gestión Integral para Autónomos</h2>
+					<p class="text-slate-600 mb-6">
+						Nos encargamos de todo el ciclo de vida fiscal de tu actividad. Desde el alta inicial hasta la presentación de impuestos trimestrales y anuales.
+					</p>
+					<ul class="space-y-2 text-slate-700">
+						<li class="flex items-center gap-2">✅ Alta en RETA y Hacienda (Modelos 036/037)</li>
+						<li class="flex items-center gap-2">✅ Liquidaciones de IVA (Modelo 303) e IRPF (Modelo 130)</li>
+						<li class="flex items-center gap-2">✅ Libros Registro oficiales</li>
+					</ul>
+				</div>
+				<div class="flex-1 bg-blue-100 p-12 rounded-3xl text-7xl text-center">💼</div>
+			</div>
+
+			<!-- PYMES -->
+			<div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+				<div class="flex-1">
+					<h2 class="text-3xl font-bold mb-4">Asesoría para PYMES y Sociedades</h2>
+					<p class="text-slate-600 mb-6">
+						Optimizamos la estructura fiscal de tu empresa para maximizar el ahorro y asegurar el cumplimiento normativo.
+					</p>
+					<ul class="space-y-2 text-slate-700">
+						<li class="flex items-center gap-2">✅ Impuesto de Sociedades (Modelo 200)</li>
+						<li class="flex items-center gap-2">✅ Depósito de Cuentas Anuales</li>
+						<li class="flex items-center gap-2">✅ Planificación fiscal estratégica</li>
+					</ul>
+				</div>
+				<div class="flex-1 bg-green-100 p-12 rounded-3xl text-7xl text-center">🏢</div>
+			</div>
+		</div>
+	</main>
+</Layout>

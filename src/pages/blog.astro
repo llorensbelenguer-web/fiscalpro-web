@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+const posts = [
+	{ title: 'Gastos Deducibles para Autónomos', url: '/blog/gastos-deducibles', date: '2026-07-03' },
+	{ title: 'Calendario Fiscal 2026', url: '/blog/calendario-fiscal-2026', date: '2026-07-03' }
+];
+---
+
+<Layout title="Blog de Actualidad Fiscal | FiscalPro">
+	<main class="max-w-6xl mx-auto py-20 px-6">
+		<h1 class="text-4xl font-bold mb-12">Actualidad Fiscal</h1>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			{posts.map(post => (
+				<a href={post.url} class="block p-8 bg-white border border-slate-200 rounded-2xl hover:border-blue-500 transition shadow-sm">
+					<p class="text-sm text-slate-500 mb-2">{post.date}</p>
+					<h2 class="text-2xl font-bold text-slate-900 mb-4">{post.title}</h2>
+					<span class="text-blue-700 font-medium">Leer más &rarr;</span>
+				</a>
+			))}
+		</div>
+	</main>
+</Layout>

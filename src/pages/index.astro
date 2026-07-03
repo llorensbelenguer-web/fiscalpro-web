@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FiscalPro | Asesoría Fiscal para Autónomos y PYMES">
+	<main>
+		<section class="py-20 px-6 bg-gradient-to-b from-blue-50 to-white text-center">
+			<h1 class="text-5xl font-extrabold text-slate-900 mb-6">
+				Tu tranquilidad fiscal es <span class="text-blue-700">nuestro negocio</span>
+			</h1>
+			<p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+				Ayudamos a autónomos y PYMES a navegar por la complejidad del sistema tributario español con soluciones personalizadas.
+			</p>
+			<div class="flex justify-center gap-4">
+				<a href="/contacto" class="bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:bg-blue-800 transition">
+					Empezar Ahora
+				</a>
+				<a href="/servicios" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl text-lg font-bold hover:bg-slate-50 transition">
+					Nuestros Servicios
+				</a>
+			</div>
+		</section>
+
+		<section class="max-w-6xl mx-auto py-20 px-6">
+			<h2 class="text-3xl font-bold text-center mb-16">Servicios Especializados</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+					<div class="text-4xl mb-4">💼</div>
+					<h3 class="text-xl font-bold mb-2">Autónomos</h3>
+					<p class="text-slate-500">Gestión de altas, IVA, IRPF y asesoramiento continuo en tu actividad diaria.</p>
+				</div>
+				<div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+					<div class="text-4xl mb-4">🏢</div>
+					<h3 class="text-xl font-bold mb-2">Empresas</h3>
+					<p class="text-slate-500">Impuesto de Sociedades, Cuentas Anuales y planificación fiscal estratégica para PYMES.</p>
+				</div>
+				<div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+					<div class="text-4xl mb-4">⚖️</div>
+					<h3 class="text-xl font-bold mb-2">Auditoría</h3>
+					<p class="text-slate-500">Revisión de estados contables y defensa ante inspecciones de la AEAT.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
