@@ -4,111 +4,127 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="FiscalPro | Consultoría Fiscal en Valencia">
 	<main>
-		<!-- Hero Section con imagen fija de Valencia -->
-		<section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
-			<div class="absolute inset-0 z-0">
-				<div class="absolute inset-0 bg-slate-900/60 z-10"></div>
-				<div class="w-full h-full bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&q=80&w=2000');"></div>
-			</div>
-			
+		<!-- Hero Section con imagen fija de Valencia (CSS Puro para asegurar el efecto) -->
+		<section class="hero-valencia relative h-[80vh] flex items-center justify-center overflow-hidden">
+			<div class="absolute inset-0 bg-slate-900/50 z-10"></div>
 			<div class="relative z-20 max-w-6xl mx-auto text-center px-6">
-				<h1 class="text-6xl md:text-9xl font-black text-white mb-4 tracking-tighter drop-shadow-2xl">
+				<h1 class="text-7xl md:text-[12rem] font-black text-white mb-4 tracking-tighter drop-shadow-2xl leading-none">
 					FISCAL<span class="text-blue-500">PRO</span>
 				</h1>
-				<h2 class="text-2xl md:text-4xl font-bold text-white/90 mb-8 uppercase tracking-widest">
-					Valencia · Consultoría de Alto Nivel
+				<h2 class="text-2xl md:text-5xl font-bold text-white/90 mb-8 uppercase tracking-[0.2em]">
+					Valencia
 				</h2>
-				<div class="flex flex-col sm:row justify-center gap-4">
-					<a href="/fiscalpro-web/contacto" class="px-10 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition-all shadow-xl">
+				<div class="flex flex-col sm:flex-row justify-center gap-6 mt-12">
+					<a href="/fiscalpro-web/contacto" class="px-12 py-5 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition-all shadow-2xl text-xl">
 						Contactar Ahora
 					</a>
-					<a href="https://wa.me/34697368100" target="_blank" class="px-10 py-4 bg-green-600 text-white rounded-full font-bold hover:bg-green-500 transition-all flex items-center justify-center gap-2">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
-						WhatsApp Directo
+					<a href="https://wa.me/34697368100" target="_blank" class="px-12 py-5 bg-green-600 text-white rounded-full font-bold hover:bg-green-500 transition-all flex items-center justify-center gap-3 text-xl shadow-2xl">
+						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
+						WhatsApp
 					</a>
 				</div>
 			</div>
 		</section>
 
 		<!-- Sección de Pestañas Mejorada -->
-		<section class="max-w-6xl mx-auto py-24 px-6" id="servicios-tabs">
-			<div class="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+		<section class="max-w-7xl mx-auto py-24 px-6" id="servicios-tabs">
+			<div class="text-center mb-16">
+				<h2 class="text-5xl font-black text-slate-900 mb-4 uppercase">Servicios Especializados</h2>
+				<div class="w-32 h-2 bg-blue-600 mx-auto rounded-full"></div>
+			</div>
+
+			<div class="bg-white rounded-[2rem] shadow-2xl border border-slate-200 overflow-hidden">
 				<!-- Menú de Pestañas -->
-				<div class="flex flex-wrap bg-slate-900">
-					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent active-tab-new" data-target="autonomos">
+				<div class="flex flex-wrap bg-slate-900 p-2 gap-2">
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl active-tab-new" data-target="autonomos">
 						AUTÓNOMOS
 					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent" data-target="pymes">
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl" data-target="pymes">
 						PYMES
 					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent" data-target="irpf">
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl" data-target="irpf">
 						GESTIÓN IRPF
 					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-bold text-white/60 hover:text-white transition-all border-b-4 border-transparent" data-target="auditoria">
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl" data-target="auditoria">
 						AUDITORÍA
 					</button>
 				</div>
 
 				<!-- Contenedor de Contenidos -->
-				<div class="p-8 md:p-16 min-h-[450px]">
+				<div class="p-8 md:p-20 min-h-[500px] bg-white">
+					<!-- Pestaña Autónomos -->
 					<div id="autonomos" class="tab-pane block">
-						<div class="grid md:grid-cols-2 gap-12 items-center">
-							<div class="space-y-6">
-								<h3 class="text-4xl font-black text-slate-900">Autónomos</h3>
-								<p class="text-xl text-slate-600">Gestión fiscal completa para que solo te preocupes de tu trabajo.</p>
-								<ul class="space-y-3 text-slate-700 font-medium">
-									<li>• Altas en 24 horas</li>
-									<li>• Trimestrales (IVA/IRPF)</li>
-									<li>• Libros de registro</li>
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-8">
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Soluciones para Autónomos</h3>
+								<p class="text-2xl text-slate-600 font-light">Gestión 360º de tu actividad profesional en Valencia.</p>
+								<ul class="space-y-4 text-xl text-slate-800">
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Altas en 24 horas</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Trimestrales (IVA/IRPF)</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Libros de registro oficiales</li>
 								</ul>
 							</div>
-							<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="Autónomos" />
+							<div class="relative group">
+								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
+								<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Autónomos" />
+							</div>
 						</div>
 					</div>
 
+					<!-- Pestaña PYMES -->
 					<div id="pymes" class="tab-pane hidden">
-						<div class="grid md:grid-cols-2 gap-12 items-center">
-							<div class="space-y-6">
-								<h3 class="text-4xl font-black text-slate-900">PYMES</h3>
-								<p class="text-xl text-slate-600">Estructura profesional para el crecimiento de tu empresa.</p>
-								<ul class="space-y-3 text-slate-700 font-medium">
-									<li>• Impuesto de Sociedades</li>
-									<li>• Cuentas Anuales</li>
-									<li>• Planificación estratégica</li>
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-8">
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Gestión de Sociedades</h3>
+								<p class="text-2xl text-slate-600 font-light">Escalabilidad y rigor técnico para tu empresa.</p>
+								<ul class="space-y-4 text-xl text-slate-800">
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Impuesto de Sociedades</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Cuentas Anuales</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Planificación estratégica</li>
 								</ul>
 							</div>
-							<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="PYMES" />
+							<div class="relative group">
+								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
+								<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="PYMES" />
+							</div>
 						</div>
 					</div>
 
+					<!-- Pestaña IRPF -->
 					<div id="irpf" class="tab-pane hidden">
-						<div class="grid md:grid-cols-2 gap-12 items-center">
-							<div class="space-y-6">
-								<h3 class="text-4xl font-black text-slate-900">Gestión de IRPF</h3>
-								<p class="text-xl text-slate-600">Maximizamos tus deducciones en la Comunidad Valenciana.</p>
-								<ul class="space-y-3 text-slate-700 font-medium">
-									<li>• Renta y Patrimonio</li>
-									<li>• Deducciones Autonómicas</li>
-									<li>• Revisión de borradores</li>
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-8">
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Especialistas en IRPF</h3>
+								<p class="text-2xl text-slate-600 font-light">Maximizamos tus deducciones en la Comunidad Valenciana.</p>
+								<ul class="space-y-4 text-xl text-slate-800">
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Renta y Patrimonio</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Deducciones Autonómicas</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Revisión de borradores</li>
 								</ul>
 							</div>
-							<!-- FOTO ESPECÍFICA IRPF -->
-							<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="IRPF Valencia" />
+							<div class="relative group">
+								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
+								<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="IRPF Valencia" />
+							</div>
 						</div>
 					</div>
 
+					<!-- Pestaña Auditoría -->
 					<div id="auditoria" class="tab-pane hidden">
-						<div class="grid md:grid-cols-2 gap-12 items-center">
-							<div class="space-y-6">
-								<h3 class="text-4xl font-black text-slate-900">Auditoría</h3>
-								<p class="text-xl text-slate-600">Seguridad jurídica ante cualquier inspección.</p>
-								<ul class="space-y-3 text-slate-700 font-medium">
-									<li>• Defensa ante la AEAT</li>
-									<li>• Auditoría preventiva</li>
-									<li>• Recursos administrativos</li>
+						<div class="grid md:grid-cols-2 gap-16 items-center">
+							<div class="space-y-8">
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Auditoría y Defensa</h3>
+								<p class="text-2xl text-slate-600 font-light">Seguridad jurídica ante cualquier inspección.</p>
+								<ul class="space-y-4 text-xl text-slate-800">
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Defensa ante la AEAT</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Auditoría preventiva</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Recursos administrativos</li>
 								</ul>
 							</div>
-							<img src="https://images.unsplash.com/photo-1554224154-71917b212330?auto=format&fit=crop&q=80&w=800" class="rounded-xl shadow-lg h-80 w-full object-cover" alt="Auditoría" />
+							<div class="relative group">
+								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
+								<img src="https://images.unsplash.com/photo-1554224154-71917b212330?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Auditoría" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -116,12 +132,13 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- Footer de Contacto Rápido -->
-		<section class="bg-slate-50 py-16 border-t border-slate-200">
+		<section class="bg-blue-900 py-24 border-t border-slate-200">
 			<div class="max-w-4xl mx-auto text-center px-6">
-				<h2 class="text-3xl font-bold mb-8">¿Hablamos?</h2>
-				<a href="https://wa.me/34697368100" class="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white px-8 py-5 rounded-2xl text-2xl font-bold transition-transform hover:scale-105 shadow-xl">
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
-					WhatsApp: 697 368 100
+				<h2 class="text-5xl font-black mb-8 text-white uppercase tracking-tight">¿Dudas Fiscales?</h2>
+				<p class="text-xl text-blue-200 mb-12">Hablemos ahora mismo por WhatsApp para una atención inmediata.</p>
+				<a href="https://wa.me/34697368100" target="_blank" class="inline-flex items-center gap-6 bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-2xl text-3xl font-black transition-all hover:scale-105 shadow-[0_20px_50px_rgba(34,197,94,0.3)]">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
+					697 368 100
 				</a>
 			</div>
 		</section>
@@ -129,40 +146,65 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+	.hero-valencia {
+		background-image: url('https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&q=80&w=2000');
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+	}
+	/* Fix for mobile browsers where background-attachment: fixed fails */
+	@media (max-width: 768px) {
+		.hero-valencia {
+			background-attachment: scroll;
+		}
+	}
 	.active-tab-new {
-		@apply border-blue-500 text-white bg-slate-800/50;
+		background-color: #1e3a8a !important; /* blue-900 */
+		color: white !important;
+		opacity: 1 !important;
 	}
 	.tab-pane {
-		animation: slideIn 0.3s ease-out;
+		animation: fadeInScale 0.4s ease-out;
 	}
-	@keyframes slideIn {
-		from { opacity: 0; transform: translateY(10px); }
-		to { opacity: 1; transform: translateY(0); }
+	@keyframes fadeInScale {
+		from { opacity: 0; transform: scale(0.98); }
+		to { opacity: 1; transform: scale(1); }
 	}
 </style>
 
 <script is:inline>
-	const buttons = document.querySelectorAll('.tab-btn');
-	const panes = document.querySelectorAll('.tab-pane');
+	function initTabs() {
+		const buttons = document.querySelectorAll('.tab-btn');
+		const panes = document.querySelectorAll('.tab-pane');
 
-	buttons.forEach(btn => {
-		btn.addEventListener('click', () => {
-			const target = btn.getAttribute('data-target');
+		buttons.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const target = btn.getAttribute('data-target');
 
-			// Botones
-			buttons.forEach(b => b.classList.remove('active-tab-new', 'text-white'));
-			btn.classList.add('active-tab-new', 'text-white');
+				// Botones
+				buttons.forEach(b => {
+					b.classList.remove('active-tab-new');
+					b.style.opacity = "0.6";
+				});
+				btn.classList.add('active-tab-new');
+				btn.style.opacity = "1";
 
-			// Contenidos (Ocultar todos y mostrar solo el seleccionado)
-			panes.forEach(p => {
-				if (p.id === target) {
-					p.classList.remove('hidden');
-					p.classList.add('block');
-				} else {
-					p.classList.add('hidden');
-					p.classList.remove('block');
-				}
+				// Contenidos (Ocultar todos y mostrar solo el seleccionado)
+				panes.forEach(p => {
+					if (p.id === target) {
+						p.classList.remove('hidden');
+						p.classList.add('block');
+					} else {
+						p.classList.add('hidden');
+						p.classList.remove('block');
+					}
+				});
 			});
 		});
-	});
+	}
+	
+	// Reiniciar al cargar (Astro sometimes needs this for client-side navigation)
+	document.addEventListener('astro:page-load', initTabs);
+	// Ejecución inmediata
+	initTabs();
 </script>
