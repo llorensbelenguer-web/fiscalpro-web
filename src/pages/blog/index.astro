@@ -15,7 +15,7 @@ const posts = await getCollection('blog');
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 			{posts.map(post => (
-				<a href={`/fiscalpro-web/blog/${post.slug}`} class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+				<a href={`/fiscalpro-web/blog/${post.slug}/`} class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
 					<div class="p-8">
 						<span class="inline-block px-3 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-full mb-4 uppercase tracking-wider">
 							{post.data.category}
