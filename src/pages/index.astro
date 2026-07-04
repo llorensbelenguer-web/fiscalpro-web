@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="FiscalPro | Consultoría Fiscal en Valencia">
 	<main>
-		<!-- Hero Section con imagen fija de Valencia (CSS Puro para asegurar el efecto) -->
+		<!-- Hero Section con imagen fija de Valencia -->
 		<section class="hero-valencia relative h-[80vh] flex items-center justify-center overflow-hidden">
 			<div class="absolute inset-0 bg-slate-900/50 z-10"></div>
 			<div class="relative z-20 max-w-6xl mx-auto text-center px-6">
@@ -12,11 +12,14 @@ import Layout from '../layouts/Layout.astro';
 					FISCAL<span class="text-blue-500">PRO</span>
 				</h1>
 				<h2 class="text-2xl md:text-5xl font-bold text-white/90 mb-8 uppercase tracking-[0.2em]">
-					Valencia
+					Valencia · Consultoría Premium
 				</h2>
+				<p class="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light italic">
+					"Estudiamos cada caso con detenimiento, porque no hay dos clientes iguales. Nuestra promesa es la excelencia técnica."
+				</p>
 				<div class="flex flex-col sm:flex-row justify-center gap-6 mt-12">
-					<a href="/fiscalpro-web/contacto" class="px-12 py-5 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition-all shadow-2xl text-xl">
-						Contactar Ahora
+					<a href="/fiscalpro-web/contacto" class="px-12 py-5 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition-all shadow-xl text-xl">
+						Solicitar Auditoría
 					</a>
 					<a href="https://wa.me/34697368100" target="_blank" class="px-12 py-5 bg-green-600 text-white rounded-full font-bold hover:bg-green-500 transition-all flex items-center justify-center gap-3 text-xl shadow-2xl">
 						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
@@ -29,7 +32,7 @@ import Layout from '../layouts/Layout.astro';
 		<!-- Sección de Pestañas Mejorada -->
 		<section class="max-w-7xl mx-auto py-24 px-6" id="servicios-tabs">
 			<div class="text-center mb-16">
-				<h2 class="text-5xl font-black text-slate-900 mb-4 uppercase">Servicios Especializados</h2>
+				<h2 class="text-5xl font-black text-slate-900 mb-4 uppercase">Servicios de Especialista</h2>
 				<div class="w-32 h-2 bg-blue-600 mx-auto rounded-full"></div>
 			</div>
 
@@ -45,27 +48,26 @@ import Layout from '../layouts/Layout.astro';
 					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl" data-target="irpf">
 						GESTIÓN IRPF
 					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl" data-target="auditoria">
-						AUDITORÍA
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl" data-target="internacional">
+						INTERNACIONAL
 					</button>
 				</div>
 
 				<!-- Contenedor de Contenidos -->
-				<div class="p-8 md:p-20 min-h-[500px] bg-white">
+				<div class="p-8 md:p-20 min-h-[500px] bg-white text-left">
 					<!-- Pestaña Autónomos -->
 					<div id="autonomos" class="tab-pane block">
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
 								<h3 class="text-5xl font-black text-blue-900 leading-tight">Soluciones para Autónomos</h3>
-								<p class="text-2xl text-slate-600 font-light">Gestión 360º de tu actividad profesional en Valencia.</p>
+								<p class="text-2xl text-slate-600 font-light">Gestión 360º de tu actividad profesional con foco en el ahorro.</p>
 								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Altas en 24 horas</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Trimestrales (IVA/IRPF)</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Libros de registro oficiales</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Alta en RETA y Hacienda en 24h.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Liquidación trimestral de IVA e IRPF.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Control de libros registro oficiales.</li>
 								</ul>
 							</div>
 							<div class="relative group">
-								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
 								<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Autónomos" />
 							</div>
 						</div>
@@ -76,15 +78,14 @@ import Layout from '../layouts/Layout.astro';
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
 								<h3 class="text-5xl font-black text-blue-900 leading-tight">Gestión de Sociedades</h3>
-								<p class="text-2xl text-slate-600 font-light">Escalabilidad y rigor técnico para tu empresa.</p>
+								<p class="text-2xl text-slate-600 font-light">Estructura legal y fiscal optimizada para empresas en crecimiento.</p>
 								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Impuesto de Sociedades</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Cuentas Anuales</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Planificación estratégica</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Impuesto de Sociedades y pagos a cuenta.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Elaboración y depósito de Cuentas Anuales.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Planificación fiscal para el cierre de ejercicio.</li>
 								</ul>
 							</div>
 							<div class="relative group">
-								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
 								<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="PYMES" />
 							</div>
 						</div>
@@ -95,35 +96,33 @@ import Layout from '../layouts/Layout.astro';
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
 								<h3 class="text-5xl font-black text-blue-900 leading-tight">Especialistas en IRPF</h3>
-								<p class="text-2xl text-slate-600 font-light">Maximizamos tus deducciones en la Comunidad Valenciana.</p>
+								<p class="text-2xl text-slate-600 font-light">Analizamos cada deducción para que no pagues ni un euro de más.</p>
 								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Renta y Patrimonio</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Deducciones Autonómicas</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Revisión de borradores</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Renta de residentes y no residentes.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Deducciones autonómicas C. Valenciana.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Fiscalidad de activos (Cripto, Inmuebles).</li>
 								</ul>
 							</div>
 							<div class="relative group">
-								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
-								<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="IRPF Valencia" />
+								<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="IRPF Valencia" />
 							</div>
 						</div>
 					</div>
 
-					<!-- Pestaña Auditoría -->
-					<div id="auditoria" class="tab-pane hidden">
+					<!-- Pestaña Internacional -->
+					<div id="internacional" class="tab-pane hidden">
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
-								<h3 class="text-5xl font-black text-blue-900 leading-tight">Auditoría y Defensa</h3>
-								<p class="text-2xl text-slate-600 font-light">Seguridad jurídica ante cualquier inspección.</p>
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Fiscalidad Internacional</h3>
+								<p class="text-2xl text-slate-600 font-light">Expertos en comercio exterior y transacciones transfronterizas.</p>
 								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Defensa ante la AEAT</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Auditoría preventiva</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Recursos administrativos</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Registro ROI y operaciones intracomunitarias.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Evitación de doble imposición internacional.</li>
+									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Modelo 720: Declaración de bienes en el extranjero.</li>
 								</ul>
 							</div>
 							<div class="relative group">
-								<div class="absolute -inset-4 bg-blue-100 rounded-3xl -z-10 transform group-hover:rotate-2 transition-transform"></div>
-								<img src="https://images.unsplash.com/photo-1554224154-71917b212330?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Auditoría" />
+								<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Internacional" />
 							</div>
 						</div>
 					</div>
@@ -131,11 +130,44 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
+		<!-- Sección de FAQs Inspirada en la competencia -->
+		<section class="bg-slate-50 py-24 px-6 border-t border-slate-200">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl font-bold text-center mb-16 text-slate-900 uppercase tracking-tight">Preguntas Frecuentes (FAQ)</h2>
+				
+				<div class="space-y-6">
+					<!-- FAQ RETA -->
+					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Cómo funciona el nuevo sistema de cotización del RETA por ingresos reales?</h3>
+						<p class="text-slate-600 leading-relaxed">Desde 2023, los autónomos cotizan en función de sus rendimientos netos reales. Debes comunicar a la Seguridad Social tu previsión de beneficios y se te asignará un tramo de base de cotización. Ajustamos trimestralmente tu previsión para evitar regularizaciones excesivas al final del año.</p>
+					</div>
+
+					<!-- FAQ IRPF -->
+					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Qué gastos puedo deducir en mi IRPF si trabajo desde casa?</h3>
+						<p class="text-slate-600 leading-relaxed">Puedes deducir los gastos de titularidad de la vivienda (IBI, comunidad, seguro) en proporción a los metros usados. Para suministros (agua, luz, gas, internet), la ley permite deducir el 30% de la proporción de metros cuadrados afectos a la actividad, salvo prueba en contrario.</p>
+					</div>
+
+					<!-- FAQ C. Valenciana -->
+					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Cuáles son las deducciones estrella en la Comunidad Valenciana?</h3>
+						<p class="text-slate-600 leading-relaxed">Destacan las deducciones por alquiler de vivienda, gastos de salud (dentista, óptica, salud mental) y la inversión en energías renovables. En la C. Valenciana somos especialmente incisivos en aplicar beneficios por familia numerosa y fomento del autoempleo.</p>
+					</div>
+
+					<!-- FAQ Competencia -->
+					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Es compatible vuestro servicio con mi gestoría actual?</h3>
+						<p class="text-slate-600 leading-relaxed">Totalmente. Muchos clientes nos contratan para una **segunda opinión técnica** o para gestionar áreas específicas como la fiscalidad internacional o auditorías ante inspecciones de la AEAT, mientras mantienen su gestoría habitual para temas laborales o contabilidad básica.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Footer de Contacto Rápido -->
-		<section class="bg-blue-900 py-24 border-t border-slate-200">
+		<section class="bg-blue-950 py-24">
 			<div class="max-w-4xl mx-auto text-center px-6">
-				<h2 class="text-5xl font-black mb-8 text-white uppercase tracking-tight">¿Dudas Fiscales?</h2>
-				<p class="text-xl text-blue-200 mb-12">Hablemos ahora mismo por WhatsApp para una atención inmediata.</p>
+				<h2 class="text-5xl font-black mb-8 text-white uppercase tracking-tight">Atención Directa</h2>
+				<p class="text-xl text-blue-200 mb-12">Hablemos por WhatsApp para resolver tus dudas en el acto.</p>
 				<a href="https://wa.me/34697368100" target="_blank" class="inline-flex items-center gap-6 bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-2xl text-3xl font-black transition-all hover:scale-105 shadow-[0_20px_50px_rgba(34,197,94,0.3)]">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
 					697 368 100
@@ -152,20 +184,15 @@ import Layout from '../layouts/Layout.astro';
 		background-position: center;
 		background-size: cover;
 	}
-	/* Fix for mobile browsers where background-attachment: fixed fails */
-	@media (max-width: 768px) {
-		.hero-valencia {
-			background-attachment: scroll;
-		}
-	}
+	@media (max-width: 768px) { .hero-valencia { background-attachment: scroll; } }
+	
 	.active-tab-new {
-		background-color: #1e3a8a !important; /* blue-900 */
-		color: white !important;
+		background-color: #ffffff !important;
+		color: #1e3a8a !important; /* blue-900 */
 		opacity: 1 !important;
+		border-bottom: 4px solid #3b82f6;
 	}
-	.tab-pane {
-		animation: fadeInScale 0.4s ease-out;
-	}
+	.tab-pane { animation: fadeInScale 0.4s ease-out; }
 	@keyframes fadeInScale {
 		from { opacity: 0; transform: scale(0.98); }
 		to { opacity: 1; transform: scale(1); }
@@ -180,16 +207,8 @@ import Layout from '../layouts/Layout.astro';
 		buttons.forEach(btn => {
 			btn.addEventListener('click', () => {
 				const target = btn.getAttribute('data-target');
-
-				// Botones
-				buttons.forEach(b => {
-					b.classList.remove('active-tab-new');
-					b.style.opacity = "0.6";
-				});
+				buttons.forEach(b => b.classList.remove('active-tab-new'));
 				btn.classList.add('active-tab-new');
-				btn.style.opacity = "1";
-
-				// Contenidos (Ocultar todos y mostrar solo el seleccionado)
 				panes.forEach(p => {
 					if (p.id === target) {
 						p.classList.remove('hidden');
@@ -202,9 +221,6 @@ import Layout from '../layouts/Layout.astro';
 			});
 		});
 	}
-	
-	// Reiniciar al cargar (Astro sometimes needs this for client-side navigation)
 	document.addEventListener('astro:page-load', initTabs);
-	// Ejecución inmediata
 	initTabs();
 </script>
