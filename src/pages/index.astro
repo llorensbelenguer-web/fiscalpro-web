@@ -2,25 +2,27 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="FiscalPro | Consultoría Fiscal en Valencia">
+<Layout title="FiscalPro | Asesoría Fiscal de Alto Impacto">
 	<main>
-		<!-- Hero Section con imagen fija de la Ciudad de las Artes y las Ciencias -->
-		<section class="hero-valencia relative h-[80vh] flex items-center justify-center overflow-hidden">
-			<div class="absolute inset-0 bg-slate-900/40 z-10"></div>
+		<!-- Hero Section Ultra-Directa (Regla de los 5 segundos) -->
+		<section class="hero-valencia relative h-[90vh] flex items-center justify-center overflow-hidden">
+			<div class="absolute inset-0 bg-slate-900/50 z-10"></div>
 			<div class="relative z-20 max-w-6xl mx-auto text-center px-6">
-				<h1 class="text-7xl md:text-[12rem] font-black text-white mb-4 tracking-tighter drop-shadow-2xl leading-none">
-					FISCAL<span class="text-blue-500">PRO</span>
+				<h1 class="text-4xl md:text-7xl font-black text-white mb-6 leading-tight drop-shadow-2xl">
+					Reduzco tu <span class="text-blue-400">Impacto Impositivo</span> con Atención Presencial
 				</h1>
-				<h2 class="text-2xl md:text-5xl font-bold text-white/90 mb-8 uppercase tracking-[0.2em]">
-					Valencia · Consultoría Premium
-				</h2>
-				<div class="flex flex-col sm:flex-row justify-center gap-6 mt-12">
-					<a href="/fiscalpro-web/contacto/" class="px-12 py-5 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition-all shadow-xl text-xl">
-						Contactar Ahora
-					</a>
-					<a href="https://wa.me/34697368100" target="_blank" class="px-12 py-5 bg-green-600 text-white rounded-full font-bold hover:bg-green-500 transition-all flex items-center justify-center gap-3 text-xl shadow-2xl">
-						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
-						WhatsApp
+				<p class="text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto font-medium">
+					Asesoramiento especializado para <span class="underline decoration-blue-500 decoration-4">Autónomos, Nativos Digitales y PYMES</span>. 
+					Disponibilidad inmediata y una reunión presencial garantizada al mes.
+				</p>
+				
+				<!-- BOTÓN ENORME WHATSAPP -->
+				<div class="mt-8">
+					<a href="https://wa.me/34697368100?text=Hola,%20me%20gustaría%20solicitar%20mi%20primera%20consulta%20fiscal" 
+					   target="_blank" 
+					   class="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white px-8 md:px-16 py-6 md:py-10 rounded-full text-2xl md:text-4xl font-black uppercase tracking-tighter transition-all hover:scale-105 shadow-[0_20px_50px_rgba(34,197,94,0.4)] animate-pulse">
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
+						¡SOLICITA TU PRIMERA CONSULTA POR WHATSAPP!
 					</a>
 				</div>
 			</div>
@@ -29,177 +31,110 @@ import Layout from '../layouts/Layout.astro';
 		<!-- Sección de Pestañas Mejorada -->
 		<section class="max-w-7xl mx-auto py-24 px-6" id="servicios-tabs">
 			<div class="text-center mb-16">
-				<h2 class="text-5xl font-black text-slate-900 mb-4 uppercase">Especialistas en Gestión</h2>
+				<h2 class="text-5xl font-black text-slate-900 mb-4 uppercase">¿Cómo te ayudo a ahorrar?</h2>
 				<div class="w-32 h-2 bg-blue-600 mx-auto rounded-full"></div>
 			</div>
 
 			<div class="bg-white rounded-[2rem] shadow-2xl border border-slate-200 overflow-hidden">
-				<!-- Menú de Pestañas -->
 				<div class="flex flex-wrap bg-slate-900 p-2 gap-2">
-					<button class="tab-btn flex-1 py-6 px-4 font-black text-xs tracking-widest text-white/60 hover:text-white transition-all rounded-xl active-tab-new uppercase" data-target="autonomos">
-						Autónomos
-					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-black text-xs tracking-widest text-white/60 hover:text-white transition-all rounded-xl uppercase" data-target="pymes">
-						PYMES
-					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-black text-xs tracking-widest text-white/60 hover:text-white transition-all rounded-xl uppercase" data-target="irpf">
-						Gestión IRPF
-					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-black text-xs tracking-widest text-white/60 hover:text-white transition-all rounded-xl uppercase" data-target="internacional">
-						Internacional
-					</button>
-					<button class="tab-btn flex-1 py-6 px-4 font-black text-xs tracking-widest text-white/60 hover:text-white transition-all rounded-xl uppercase" data-target="nosotros">
-						Sobre Nosotros
-					</button>
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl active-tab-new uppercase" data-target="autonomos">Autónomos</button>
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl uppercase" data-target="pymes">Empresarios</button>
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl uppercase" data-target="irpf">Especialista IRPF</button>
+					<button class="tab-btn flex-1 py-6 px-4 font-black text-sm tracking-widest text-white/60 hover:text-white transition-all rounded-xl uppercase" data-target="nosotros">Sobre Mí</button>
 				</div>
 
-				<!-- Contenedor de Contenidos -->
 				<div class="p-8 md:p-20 min-h-[550px] bg-white text-left">
-					<!-- Pestaña Autónomos -->
+					<!-- Contenidos simplificados y directos -->
 					<div id="autonomos" class="tab-pane block">
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
-								<h3 class="text-5xl font-black text-blue-900 leading-tight">Soluciones para Autónomos</h3>
-								<p class="text-2xl text-slate-600 font-light">Gestión 360º de tu actividad profesional con foco en el ahorro.</p>
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Para el Autónomo Actual</h3>
+								<p class="text-2xl text-slate-600">Disponibilidad inmediata para resolver tus dudas de IVA e IRPF. Reunión presencial mensual para revisar tu negocio.</p>
 								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Alta en RETA y Hacienda en 24h.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Liquidación trimestral de IVA e IRPF.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Control de libros registro oficiales.</li>
+									<li class="flex items-center gap-4">💎 Reducción real de la carga fiscal</li>
+									<li class="flex items-center gap-4">📍 Reuniones en Valencia presenciales</li>
+									<li class="flex items-center gap-4">📱 Consultas vía WhatsApp ilimitadas</li>
 								</ul>
 							</div>
-							<div class="relative group">
-								<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Autónomos" />
-							</div>
+							<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Autónomos" />
 						</div>
 					</div>
 
-					<!-- Pestaña PYMES -->
 					<div id="pymes" class="tab-pane hidden">
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
-								<h3 class="text-5xl font-black text-blue-900 leading-tight">Gestión de Sociedades</h3>
-								<p class="text-2xl text-slate-600 font-light">Estructura legal y fiscal optimizada para empresas en crecimiento.</p>
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Pequeños Empresarios</h3>
+								<p class="text-2xl text-slate-600">Asesoramiento en materia tributaria para reducir el impacto impositivo de tu sociedad.</p>
 								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Impuesto de Sociedades y pagos a cuenta.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Elaboración y depósito de Cuentas Anuales.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Planificación fiscal para el cierre de ejercicio.</li>
+									<li>📈 Optimización del Impuesto de Sociedades</li>
+									<li>📋 Cuentas Anuales con rigor técnico</li>
+									<li>🤝 Trato humano y cercano, sin intermediarios</li>
 								</ul>
 							</div>
-							<div class="relative group">
-								<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="PYMES" />
-							</div>
+							<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="PYMES" />
 						</div>
 					</div>
 
-					<!-- Pestaña IRPF -->
 					<div id="irpf" class="tab-pane hidden">
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
-								<h3 class="text-5xl font-black text-blue-900 leading-tight">Especialistas en IRPF</h3>
-								<p class="text-2xl text-slate-600 font-light">Analizamos cada deducción para que no pagues ni un euro de más.</p>
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Especialista IRPF</h3>
+								<p class="text-2xl text-slate-600">Especializado en IRPF y deducciones de la Comunidad Valenciana.</p>
 								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Renta de residentes y no residentes.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Deducciones autonómicas C. Valenciana.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Fiscalidad de activos (Criptomonedas, Inmuebles).</li>
+									<li>🏡 Deducción por vivienda y alquiler</li>
+									<li>🦷 Gastos médicos y deportivos</li>
+									<li>🪙 Fiscalidad de activos digitales</li>
 								</ul>
 							</div>
-							<div class="relative group">
-								<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="IRPF Valencia" />
-							</div>
+							<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="IRPF Valencia" />
 						</div>
 					</div>
 
-					<!-- Pestaña Internacional -->
-					<div id="internacional" class="tab-pane hidden">
-						<div class="grid md:grid-cols-2 gap-16 items-center">
-							<div class="space-y-8">
-								<h3 class="text-5xl font-black text-blue-900 leading-tight">Fiscalidad Internacional</h3>
-								<p class="text-2xl text-slate-600 font-light">Expertos en comercio exterior y transacciones transfronterizas.</p>
-								<ul class="space-y-4 text-xl text-slate-800">
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">01.</span> Registro ROI y operaciones intracomunitarias.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">02.</span> Evitación de doble imposición internacional.</li>
-									<li class="flex items-center gap-4"><span class="text-blue-600 font-bold">03.</span> Modelo 720: Declaración de bienes en el extranjero.</li>
-								</ul>
-							</div>
-							<div class="relative group">
-								<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-2xl h-96 w-full object-cover" alt="Internacional" />
-							</div>
-						</div>
-					</div>
-
-					<!-- Pestaña Sobre Nosotros -->
 					<div id="nosotros" class="tab-pane hidden">
 						<div class="grid md:grid-cols-2 gap-16 items-center">
 							<div class="space-y-8">
-								<h3 class="text-5xl font-black text-blue-900 leading-tight">Sobre Nosotros</h3>
+								<h3 class="text-5xl font-black text-blue-900 leading-tight">Sobre Mí</h3>
 								<div class="space-y-4">
 									<h4 class="text-3xl font-bold text-slate-800">Llorenç Belenguer Benlloch</h4>
 									<p class="text-xl text-slate-600 leading-relaxed">
 										Grado en Derecho y Ciencias Políticas con Máster en Asesoría Fiscal Internacional. 
-										Con una sólida trayectoria y 5 clientes en cartera, me especializo en IRPF, 
-										autónomos y PYMES, así como en todos los servicios de asesoría fiscal internacional.
+										Experto en reducción de carga fiscal para autónomos y nativos digitales.
 									</p>
-									<p class="text-lg text-blue-700 font-semibold italic">
-										"Comprometido con la excelencia técnica y el trato personalizado."
-									</p>
+									<p class="text-lg text-blue-700 font-semibold italic">"Atención personalizada: Yo mismo gestiono tu expediente, sin pasar por terceros."</p>
 								</div>
 							</div>
-							<div class="relative">
-								<div class="absolute -inset-4 bg-blue-600/10 rounded-3xl -z-10 rotate-3"></div>
-								<img src="https://sc04.alicdn.com/kf/A3195799fed3b4d0490d9deb78284cbcbG.jpg" class="rounded-2xl shadow-2xl h-[500px] w-full object-cover" alt="Llorenç Belenguer" />
-							</div>
+							<img src="https://sc04.alicdn.com/kf/A3195799fed3b4d0490d9deb78284cbcbG.jpg" class="rounded-2xl shadow-2xl h-[500px] w-full object-cover" alt="Llorenç Belenguer" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Sección de FAQs -->
-		<section class="bg-slate-50 py-24 px-6 border-t border-slate-200">
-			<div class="max-w-4xl mx-auto">
-				<h2 class="text-4xl font-bold text-center mb-16 text-slate-900 uppercase tracking-tight">Preguntas Frecuentes</h2>
-				
-				<div class="space-y-6">
-					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Cómo funciona el sistema de cotización del RETA por ingresos reales?</h3>
-						<p class="text-slate-600 leading-relaxed">Desde 2023, los autónomos cotizan en función de sus rendimientos netos reales. Te ayudamos a comunicar tu previsión de beneficios y ajustar trimestralmente tu base de cotización para evitar sustos al final del ejercicio.</p>
-					</div>
-
-					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Qué gastos puedo deducir en mi IRPF si trabajo desde casa?</h3>
-						<p class="text-slate-600 leading-relaxed">Es posible deducir gastos de titularidad (IBI, comunidad) y el 30% de los suministros (agua, luz, internet) sobre la proporción de metros de la vivienda destinados a la actividad profesional.</p>
-					</div>
-
-					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Existen deducciones específicas en la Comunidad Valenciana?</h3>
-						<p class="text-slate-600 leading-relaxed">Sí, la Comunidad Valenciana cuenta con deducciones potentes por alquiler de vivienda, gastos de salud (dentista, óptica) e inversiones en energías renovables para el hogar.</p>
-					</div>
-
-					<div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-						<h3 class="text-xl font-bold text-blue-900 mb-3">¿Vuestros servicios son compatibles con mi gestoría actual?</h3>
-						<p class="text-slate-600 leading-relaxed">Perfectamente. Actuamos como consultoría experta de segundo nivel para resolver casos complejos de fiscalidad internacional o defensa ante inspecciones, colaborando con tu gestión ordinaria.</p>
-					</div>
+		<!-- Footer con Datos Legales Reales -->
+		<footer class="bg-slate-900 text-white py-16 px-6">
+			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+				<div>
+					<h3 class="text-2xl font-black mb-4">FISCALPRO</h3>
+					<p class="text-slate-400">Llorenç Belenguer Benlloch<br/>NIF: 29217203G<br/>Valencia, España</p>
+				</div>
+				<div>
+					<h4 class="font-bold mb-4 uppercase">Contacto</h4>
+					<p class="text-slate-400">llorensbelenguer@hotmail.com<br/>WhatsApp: 697 368 100</p>
+				</div>
+				<div>
+					<h4 class="font-bold mb-4 uppercase">Legal</h4>
+					<ul class="text-slate-400 space-y-2">
+						<li><a href="/fiscalpro-web/aviso-legal/">Aviso Legal</a></li>
+						<li><a href="/fiscalpro-web/privacidad/">Privacidad y Cookies</a></li>
+					</ul>
 				</div>
 			</div>
-		</section>
-
-		<!-- Footer de Contacto Rápido -->
-		<section class="bg-blue-950 py-24">
-			<div class="max-w-4xl mx-auto text-center px-6">
-				<h2 class="text-5xl font-black mb-8 text-white uppercase tracking-tight">Atención Directa</h2>
-				<p class="text-xl text-blue-200 mb-12">Resuelve tus dudas fiscales ahora mismo por WhatsApp.</p>
-				<a href="https://wa.me/34697368100" target="_blank" class="inline-flex items-center gap-6 bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-2xl text-3xl font-black transition-all hover:scale-105 shadow-[0_20px_50px_rgba(34,197,94,0.3)]">
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
-					697 368 100
-				</a>
-			</div>
-		</section>
+		</footer>
 	</main>
 </Layout>
 
 <style>
 	.hero-valencia {
-		/* Imagen nítida de la Ciudad de las Artes y las Ciencias de Valencia */
 		background-image: url('https://sc04.alicdn.com/kf/A13aad03856d34efd82e43a2007d5cbabH.jpg');
 		background-attachment: fixed;
 		background-position: center;
@@ -209,7 +144,7 @@ import Layout from '../layouts/Layout.astro';
 	
 	.active-tab-new {
 		background-color: #ffffff !important;
-		color: #1e3a8a !important; /* blue-900 */
+		color: #1e3a8a !important;
 		opacity: 1 !important;
 		border-bottom: 4px solid #3b82f6;
 	}
