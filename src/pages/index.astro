@@ -2,174 +2,339 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="FiscalPro | Consultoría Estratégica & Optimización Fiscal">
-	<main class="bg-white">
-		<!-- HERO PREMIUM: Ciudad de las Artes + 5-sec Value Prop -->
-		<section class="relative min-h-[95vh] flex items-center justify-center overflow-hidden border-b border-slate-200">
+<Layout title="FiscalPro | Asesoría Fiscal Estratégica & Optimización">
+	<main>
+		<!-- 1. HERO PERSUASIVO (Regla de los 5 segundos) -->
+		<section class="relative min-h-[95vh] flex items-center justify-center overflow-hidden">
 			<div class="absolute inset-0 z-0">
-				<div class="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-900/40 to-transparent z-10"></div>
+				<div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/70 to-slate-900/30 z-10"></div>
 				<div class="w-full h-full bg-cover bg-center bg-fixed" style="background-image: url('https://sc04.alicdn.com/kf/A13aad03856d34efd82e43a2007d5cbabH.jpg');"></div>
 			</div>
 			
-			<div class="relative z-20 max-w-7xl mx-auto px-6 w-full text-left">
-				<div class="max-w-4xl animate-slide-up">
-					<span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-blue-400 uppercase bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full">
-						Valencia · Estrategia Fiscal Boutique
-					</span>
-					<h1 class="text-6xl md:text-[8rem] font-black text-white mb-8 tracking-tighter leading-[0.9] drop-shadow-sm">
-						FISCAL<span class="text-blue-500">PRO</span>
+			<div class="relative z-20 max-w-7xl mx-auto px-6 w-full text-left pt-20">
+				<div class="max-w-4xl">
+					<div class="flex items-center gap-3 mb-8">
+						<span class="w-12 h-[2px] bg-blue-500"></span>
+						<span class="text-blue-400 font-black text-xs uppercase tracking-[0.4em]">Estrategia Fiscal Boutique</span>
+					</div>
+					<h1 class="text-6xl md:text-[8rem] font-[950] text-white mb-10 tracking-tighter leading-[0.85] drop-shadow-sm">
+						Paga menos. <br/>Vive <span class="text-blue-500">tranquilo.</span>
 					</h1>
-					<h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight max-w-2xl">
-						Reducimos tu impacto impositivo con <span class="text-blue-400">estrategia real.</span>
-					</h2>
-					<p class="text-xl text-slate-300 mb-10 max-w-xl leading-relaxed font-light">
-						Atención presencial garantizada y disponibilidad inmediata para autónomos, nativos digitales y PYMES que buscan excelencia.
+					<p class="text-xl md:text-3xl text-slate-300 mb-14 max-w-2xl font-light leading-relaxed">
+						Ayudamos a <span class="text-white font-bold">Autónomos y PYMES</span> a reducir su impacto impositivo con atención personalizada y reuniones presenciales garantizadas.
 					</p>
 					
-					<div class="flex flex-col sm:flex-row gap-6">
-						<!-- BOTÓN ENORME DE CONVERSIÓN -->
-						<a href="https://wa.me/34697368100?text=Hola%20Llorenç,%20quiero%20reducir%20mi%20carga%20fiscal" 
+					<div class="flex flex-col sm:flex-row gap-8 items-center">
+						<a href="https://wa.me/34697368100?text=Hola%20Llorenç,%20quiero%20una%20auditoria%20fiscal" 
 						   target="_blank" 
-						   class="group relative inline-flex items-center justify-center gap-4 bg-green-500 text-white px-10 py-6 rounded-2xl text-2xl font-black uppercase tracking-tight transition-all hover:bg-green-600 shadow-2xl hover:-translate-y-1">
-							<span class="absolute -top-3 -right-3 flex h-6 w-6">
-							  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-							  <span class="relative inline-flex rounded-full h-6 w-6 bg-green-500 border-2 border-white"></span>
-							</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
-							Solicitar Consulta vía WhatsApp
+						   class="group relative inline-flex items-center justify-center gap-4 bg-green-500 text-white px-14 py-8 rounded-[2rem] text-2xl font-black uppercase tracking-tight transition-all hover:bg-green-600 shadow-[0_30px_60px_rgba(34,197,94,0.4)] hover:-translate-y-1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
+							Solicitar Consulta
 						</a>
+						<a href="#servicios" class="text-white/80 hover:text-white font-bold text-xl border-b-2 border-white/20 pb-1 transition-all">Ver cómo lo hacemos &darr;</a>
 					</div>
 				</div>
 			</div>
-			
-			<!-- Trust Bar -->
-			<div class="absolute bottom-0 left-0 w-full bg-white/5 backdrop-blur-md border-t border-white/10 py-6 z-20 hidden md:block">
-				<div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-white/70 font-bold text-sm tracking-widest uppercase">
-					<span>+10M€ Ahorrados</span>
-					<span>Disponibilidad 24/7</span>
-					<span>Reunión Mensual Presencial</span>
-					<span>Especialista Valencia</span>
+
+			<!-- 2. ICON ROW (Ventajas Rápidas) -->
+			<div class="absolute bottom-10 left-0 w-full z-20">
+				<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-4">
+					<div class="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-2xl">
+						<div class="text-blue-500">
+							<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+						</div>
+						<span class="text-[10px] font-black text-white/90 uppercase tracking-widest leading-none">Atención 1:1</span>
+					</div>
+					<div class="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-2xl">
+						<div class="text-indigo-400">
+							<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+						</div>
+						<span class="text-[10px] font-black text-white/90 uppercase tracking-widest leading-none">Asesoría Online</span>
+					</div>
+					<div class="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-2xl">
+						<div class="text-green-400">
+							<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+						</div>
+						<span class="text-[10px] font-black text-white/90 uppercase tracking-widest leading-none">Respuesta Rápida</span>
+					</div>
+					<div class="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-2xl">
+						<div class="text-orange-400">
+							<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+						</div>
+						<span class="text-[10px] font-black text-white/90 uppercase tracking-widest leading-none">Expertos PYME</span>
+					</div>
+					<div class="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-2xl hidden md:flex">
+						<div class="text-purple-400">
+							<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+						</div>
+						<span class="text-[10px] font-black text-white/90 uppercase tracking-widest leading-none">Planificación Anual</span>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- HUB DE SOLUCIONES (Pestañas Modernas) -->
-		<section class="py-32 px-6 max-w-7xl mx-auto">
-			<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+		<!-- 3. INDICADORES DE CONFIANZA (SaaS B2B Style) -->
+		<section class="py-32 px-6 bg-slate-50 border-y border-slate-100">
+			<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+				<div class="p-8 bg-white rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:-translate-y-2 transition-transform">
+					<div class="text-blue-600 font-black text-5xl mb-4 tracking-tighter italic">100%</div>
+					<h4 class="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">Compromiso Digital</h4>
+					<p class="text-slate-600 font-medium">Gestión documental íntegramente online para tu comodidad total.</p>
+				</div>
+				<div class="p-8 bg-white rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:-translate-y-2 transition-transform">
+					<div class="text-blue-600 font-black text-5xl mb-4 tracking-tighter italic">1:1</div>
+					<h4 class="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">Trato Cercano</h4>
+					<p class="text-slate-600 font-medium">Sin intermediarios. Hablas directamente con tu asesor experto.</p>
+				</div>
+				<div class="p-8 bg-white rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:-translate-y-2 transition-transform">
+					<div class="text-blue-600 font-black text-5xl mb-4 tracking-tighter italic">+10M</div>
+					<h4 class="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">Ahorro Generado</h4>
+					<p class="text-slate-600 font-medium">Optimizamos cada euro para que se quede en tu caja de beneficios.</p>
+				</div>
+				<div class="p-8 bg-white rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:-translate-y-2 transition-transform">
+					<div class="text-blue-600 font-black text-5xl mb-4 tracking-tighter italic">24h</div>
+					<h4 class="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">Respuesta Max</h4>
+					<p class="text-slate-600 font-medium">Tu negocio no espera, nuestras respuestas a tus dudas tampoco.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4. SERVICIOS (Problem-Solution-Benefit) -->
+		<section class="py-32 px-6 max-w-7xl mx-auto" id="servicios">
+			<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
 				<div class="max-w-2xl">
-					<h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-4">Servicios 360º</h2>
-					<h3 class="text-5xl font-black text-slate-900 leading-tight">Soluciones diseñadas para el <br/><span class="text-slate-400">empresario moderno.</span></h3>
+					<h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-4">Soluciones de Negocio</h2>
+					<h3 class="text-5xl md:text-7xl font-black text-slate-900 leading-[0.9] tracking-tighter">Impacto real en tus <br/><span class="text-slate-400 italic">finanzas.</span></h3>
 				</div>
-				<a href="/fiscalpro-web/servicios/" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1 hover:text-blue-800 transition-colors">Ver todos los servicios &rarr;</a>
+				<a href="https://wa.me/34697368100" class="px-10 py-5 bg-blue-600 text-white rounded-2xl font-black uppercase text-xs tracking-[0.2em] shadow-xl shadow-blue-200 hover:bg-blue-700 transition-all">Pedir Presupuesto</a>
 			</div>
 
-			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-				<!-- Navegador lateral (Desktop) / Superior (Mobile) -->
-				<div class="lg:col-span-4 space-y-2">
-					<button class="tab-btn w-full text-left p-6 rounded-2xl transition-all border-2 border-transparent active-tab-v2 group" data-target="autonomos">
-						<div class="font-black text-lg uppercase tracking-tight group-hover:translate-x-2 transition-transform">Autónomos</div>
-						<div class="text-sm opacity-60 font-medium">Gestión ágil para nativos digitales</div>
-					</button>
-					<button class="tab-btn w-full text-left p-6 rounded-2xl transition-all border-2 border-transparent hover:bg-slate-50 group" data-target="pymes">
-						<div class="font-black text-lg uppercase tracking-tight group-hover:translate-x-2 transition-transform">Empresas</div>
-						<div class="text-sm opacity-60 font-medium">Estructura y optimización de activos</div>
-					</button>
-					<button class="tab-btn w-full text-left p-6 rounded-2xl transition-all border-2 border-transparent hover:bg-slate-50 group" data-target="irpf">
-						<div class="font-black text-lg uppercase tracking-tight group-hover:translate-x-2 transition-transform">Especialista IRPF</div>
-						<div class="text-sm opacity-60 font-medium">Deducciones Comunidad Valenciana</div>
-					</button>
-					<button class="tab-btn w-full text-left p-6 rounded-2xl transition-all border-2 border-transparent hover:bg-slate-50 group" data-target="internacional">
-						<div class="font-black text-lg uppercase tracking-tight group-hover:translate-x-2 transition-transform">Internacional</div>
-						<div class="text-sm opacity-60 font-medium">ROI, Modelo 720 y Criptoactivo</div>
-					</button>
-					<button class="tab-btn w-full text-left p-6 rounded-2xl transition-all border-2 border-transparent hover:bg-slate-50 group" data-target="nosotros">
-						<div class="font-black text-lg uppercase tracking-tight group-hover:translate-x-2 transition-transform">Sobre Mí</div>
-						<div class="text-sm opacity-60 font-medium">Perfil de Llorenç Belenguer</div>
-					</button>
+			<div class="grid lg:grid-cols-3 gap-8">
+				<!-- Autónomos -->
+				<div class="group p-12 bg-white rounded-[3rem] border border-slate-200 hover:border-blue-500 transition-all duration-500 hover:shadow-2xl">
+					<div class="text-4xl mb-10 group-hover:scale-125 transition-transform origin-left">💼</div>
+					<h4 class="text-3xl font-black mb-6 text-slate-900">Autónomos & Freelance</h4>
+					<div class="space-y-6 text-slate-600">
+						<div>
+							<p class="text-[10px] font-black uppercase text-red-500 mb-1">El Problema</p>
+							<p class="font-medium italic">"No sé cuánto pagaré el trimestre que viene y la burocracia me quita horas de trabajo."</p>
+						</div>
+						<div class="h-[1px] bg-slate-100"></div>
+						<div>
+							<p class="text-[10px] font-black uppercase text-blue-500 mb-1">Nuestra Solución</p>
+							<p class="font-bold text-slate-900">Gestión automatizada y planificación predictiva de ingresos y gastos.</p>
+						</div>
+						<div>
+							<p class="text-[10px] font-black uppercase text-green-500 mb-1">Tu Beneficio</p>
+							<p class="text-lg font-black text-slate-900">Máximo ahorro fiscal legal y libertad total para crear.</p>
+						</div>
+					</div>
 				</div>
 
-				<!-- Visualizador de Contenido -->
-				<div class="lg:col-span-8 bg-slate-50 rounded-[2.5rem] p-8 md:p-16 border border-slate-200 shadow-inner">
-					<div id="autonomos" class="tab-pane block space-y-10">
-						<div class="grid md:grid-cols-2 gap-12">
-							<div class="space-y-6">
-								<h4 class="text-4xl font-black text-slate-900 leading-tight">Libertad total para tu actividad profesional.</h4>
-								<p class="text-xl text-slate-600 leading-relaxed">No pierdas tiempo con la AEAT. Resolvemos tus dudas por WhatsApp al instante y nos vemos una vez al mes para planificar tu ahorro.</p>
-								<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-									<p class="text-blue-600 font-bold mb-1">Beneficio Clave</p>
-									<p class="text-slate-800 font-medium text-lg">Reducción de hasta un 15% en carga impositiva mediante auditoría de gastos.</p>
-								</div>
-							</div>
-							<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-2xl h-80 w-full object-cover" alt="Autónomos" />
+				<!-- PYMES -->
+				<div class="group p-12 bg-slate-900 rounded-[3rem] border border-slate-800 hover:border-blue-500 transition-all duration-500 hover:shadow-2xl">
+					<div class="text-4xl mb-10 group-hover:scale-125 transition-transform origin-left">🏢</div>
+					<h4 class="text-3xl font-black mb-6 text-white">PYMES & Sociedades</h4>
+					<div class="space-y-6 text-slate-400">
+						<div>
+							<p class="text-[10px] font-black uppercase text-red-400 mb-1">El Problema</p>
+							<p class="font-medium italic">"Mi gestoría actual solo pica facturas y no me propone estrategias de ahorro."</p>
+						</div>
+						<div class="h-[1px] bg-white/10"></div>
+						<div>
+							<p class="text-[10px] font-black uppercase text-blue-400 mb-1">Nuestra Solución</p>
+							<p class="font-bold text-white">Ingeniería fiscal avanzada y optimización del balance de situación.</p>
+						</div>
+						<div>
+							<p class="text-[10px] font-black uppercase text-green-400 mb-1">Tu Beneficio</p>
+							<p class="text-lg font-black text-white">Empresa solvente, segura y fiscalmente eficiente.</p>
 						</div>
 					</div>
+				</div>
 
-					<div id="pymes" class="tab-pane hidden space-y-10">
-						<div class="grid md:grid-cols-2 gap-12">
-							<div class="space-y-6">
-								<h4 class="text-4xl font-black text-slate-900 leading-tight">Ingeniería Fiscal para Sociedades.</h4>
-								<p class="text-xl text-slate-600 leading-relaxed">Analizamos tu balance para encontrar el camino de menor resistencia tributaria. Impuesto de Sociedades y planificación patrimonial.</p>
-								<ul class="space-y-3 text-slate-800 font-bold">
-									<li class="flex items-center gap-3">⚡ Cuentas Anuales en tiempo récord</li>
-									<li class="flex items-center gap-3">⚡ Consolidación fiscal estratégica</li>
-								</ul>
-							</div>
-							<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-2xl h-80 w-full object-cover" alt="Empresas" />
+				<!-- IRPF -->
+				<div class="group p-12 bg-white rounded-[3rem] border border-slate-200 hover:border-blue-500 transition-all duration-500 hover:shadow-2xl">
+					<div class="text-4xl mb-10 group-hover:scale-125 transition-transform origin-left">⚖️</div>
+					<h4 class="text-3xl font-black mb-6 text-slate-900">Especialista Renta</h4>
+					<div class="space-y-6 text-slate-600">
+						<div>
+							<p class="text-[10px] font-black uppercase text-red-500 mb-1">El Problema</p>
+							<p class="font-medium italic">"El borrador de Hacienda no incluye mis deducciones de la Comunidad Valenciana."</p>
 						</div>
-					</div>
-
-					<div id="irpf" class="tab-pane hidden space-y-10">
-						<div class="grid md:grid-cols-2 gap-12">
-							<div class="space-y-6">
-								<h4 class="text-4xl font-black text-slate-900 leading-tight">Tu Renta en la Comunidad Valenciana.</h4>
-								<p class="text-xl text-slate-600 leading-relaxed">Especialistas en el tramo autonómico valenciano. Si existe una deducción por alquiler, salud o energía renovable, la aplicamos.</p>
-								<p class="text-lg font-bold text-blue-700">Mínimo una reunión presencial al mes para seguimiento.</p>
-							</div>
-							<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-2xl h-80 w-full object-cover" alt="IRPF Valencia" />
+						<div class="h-[1px] bg-slate-100"></div>
+						<div>
+							<p class="text-[10px] font-black uppercase text-blue-500 mb-1">Nuestra Solución</p>
+							<p class="font-bold text-slate-900">Auditoría detallada de gastos en salud, vivienda y sostenibilidad local.</p>
 						</div>
-					</div>
-
-					<div id="internacional" class="tab-pane hidden space-y-10">
-						<div class="grid md:grid-cols-2 gap-12">
-							<div class="space-y-6">
-								<h4 class="text-4xl font-black text-slate-900 leading-tight">Globaliza tu negocio sin riesgos.</h4>
-								<p class="text-xl text-slate-600 leading-relaxed">Gestión de IVA intracomunitario (ROI), exportaciones y tributación de criptoactivos. No dejes que las fronteras compliquen tu contabilidad.</p>
-							</div>
-							<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-2xl h-80 w-full object-cover" alt="Internacional" />
-						</div>
-					</div>
-
-					<div id="nosotros" class="tab-pane hidden space-y-10 text-left">
-						<div class="grid md:grid-cols-2 gap-12 items-start">
-							<div class="space-y-6">
-								<h4 class="text-4xl font-black text-slate-900 leading-tight">La cara detrás de tu estrategia.</h4>
-								<div class="bg-blue-900 text-white p-6 rounded-2xl">
-									<p class="text-2xl font-bold mb-2">Llorenç Belenguer Benlloch</p>
-									<p class="text-sm opacity-80 uppercase tracking-widest font-black mb-4">Especialista Senior</p>
-									<p class="text-lg leading-relaxed font-light">
-										Grado en Derecho y Ciencias Políticas. Máster en Asesoría Fiscal Internacional. 
-										Gestiono personalmente cada caso con el rigor de un abogado y la visión de un consultor financiero.
-									</p>
-								</div>
-								<p class="text-slate-500 italic">"Mi objetivo es que pagues lo justo, ni un céntimo más, mediante una planificación inteligente y presencial."</p>
-							</div>
-							<div class="relative">
-								<div class="absolute -inset-2 bg-blue-600 rounded-[2rem] -z-10 rotate-3 opacity-20"></div>
-								<img src="https://sc04.alicdn.com/kf/A3195799fed3b4d0490d9deb78284cbcbG.jpg" class="rounded-3xl shadow-2xl w-full h-[450px] object-cover" alt="Llorenç Belenguer" />
-							</div>
+						<div>
+							<p class="text-[10px] font-black uppercase text-green-500 mb-1">Tu Beneficio</p>
+							<p class="text-lg font-black text-slate-900">Devoluciones máximas y 100% de cumplimiento legal.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- FINAL CTA -->
-		<section class="bg-slate-950 py-32 px-6 text-center">
-			<div class="max-w-3xl mx-auto">
-				<h2 class="text-5xl md:text-7xl font-black text-white mb-8 tracking-tighter">¿Hablamos en persona?</h2>
-				<p class="text-xl text-slate-400 mb-12 font-light">Reserva tu primera sesión de consultoría estratégica y empieza a optimizar tu factura fiscal hoy mismo.</p>
-				<a href="https://wa.me/34697368100" class="inline-flex items-center gap-6 bg-blue-600 hover:bg-blue-500 text-white px-12 py-7 rounded-2xl text-2xl md:text-3xl font-black transition-all hover:scale-105 shadow-[0_20px_50px_rgba(37,99,235,0.4)]">
-					Contactar por WhatsApp
+		<!-- 5. CASOS DE ÉXITO (Social Proof) -->
+		<section class="py-32 px-6 bg-slate-50">
+			<div class="max-w-7xl mx-auto">
+				<h2 class="text-center text-4xl md:text-6xl font-black mb-20 tracking-tighter">Resultados <span class="text-blue-600 underline">Demostrados</span></h2>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="p-10 bg-white rounded-3xl border border-slate-200 shadow-lg">
+						<div class="flex justify-between items-center mb-6">
+							<span class="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-black uppercase rounded-full">Freelance IT</span>
+							<span class="text-slate-300">2026</span>
+						</div>
+						<p class="font-bold text-xl mb-4 leading-tight">Recuperación de 3.400€ en deducciones de vivienda no aplicadas.</p>
+						<p class="text-slate-500 text-sm">Aplicamos el 30% de suministros afectos y revisión de gastos de inversión tecnológica.</p>
+					</div>
+					<div class="p-10 bg-white rounded-3xl border border-slate-200 shadow-lg scale-105 border-blue-500 relative z-10">
+						<div class="flex justify-between items-center mb-6">
+							<span class="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-black uppercase rounded-full">E-Commerce</span>
+							<span class="text-slate-300">2026</span>
+						</div>
+						<p class="font-bold text-xl mb-4 leading-tight">Evitamos sanción de 12.000€ en inspección por gastos de viaje.</p>
+						<p class="text-slate-500 text-sm">Justificación técnica y defensa jurídica ante la administración tributaria regional.</p>
+					</div>
+					<div class="p-10 bg-white rounded-3xl border border-slate-200 shadow-lg">
+						<div class="flex justify-between items-center mb-6">
+							<span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-black uppercase rounded-full">PYME Valencia</span>
+							<span class="text-slate-300">2026</span>
+						</div>
+						<p class="font-bold text-xl mb-4 leading-tight">Optimización del 15% en el Impuesto de Sociedades anual.</p>
+						<p class="text-slate-500 text-sm">Reestructuración de activos y aplicación de bonificaciones por creación de empleo.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 6. TESTIMONIOS (Infraestructura preparada) -->
+		<section class="py-32 px-6 bg-white overflow-hidden">
+			<div class="max-w-7xl mx-auto text-center">
+				<h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-10 italic">Lo que dicen nuestros socios</h2>
+				<div class="flex justify-center gap-12 flex-wrap opacity-50">
+					<!-- Placeholders de testimonios -->
+					<div class="max-w-md text-left p-8 border-l-4 border-slate-200">
+						<p class="text-lg font-medium text-slate-800 mb-6 italic">"Buscaba a alguien que entendiera mi negocio digital y Llorenç superó mis expectativas con su atención directa."</p>
+						<div class="font-black text-xs uppercase tracking-widest text-slate-400">CEO · Startup Tecnológica</div>
+					</div>
+					<div class="max-w-md text-left p-8 border-l-4 border-slate-200">
+						<p class="text-lg font-medium text-slate-800 mb-6 italic">"Tener una reunión presencial al mes me da la tranquilidad que no encontraba en las gestorías 100% frías de internet."</p>
+						<div class="font-black text-xs uppercase tracking-widest text-slate-400">Propietario · Hostelería Valencia</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 7. CÓMO TRABAJAMOS (El Proceso) -->
+		<section class="py-32 px-6 bg-slate-950 text-white border-y border-white/5">
+			<div class="max-w-7xl mx-auto">
+				<h2 class="text-center text-5xl font-black mb-24 tracking-tighter uppercase">Tu camino al <span class="text-blue-500 italic">Éxito Fiscal</span></h2>
+				<div class="grid md:grid-cols-4 gap-16 relative">
+					<div class="hidden md:block absolute top-10 left-0 w-full h-[2px] bg-gradient-to-r from-blue-900 via-blue-500 to-blue-900 -z-0"></div>
+					
+					<div class="relative z-10 text-center space-y-6">
+						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">01</div>
+						<h4 class="font-black text-xl uppercase tracking-tighter">Contacto</h4>
+						<p class="text-slate-400 font-medium">WhatsApp directo para agendar tu primera sesión.</p>
+					</div>
+					<div class="relative z-10 text-center space-y-6">
+						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">02</div>
+						<h4 class="font-black text-xl uppercase tracking-tighter">Auditoría</h4>
+						<p class="text-slate-400 font-medium">Revisamos tus últimos 2 años de impuestos gratis.</p>
+					</div>
+					<div class="relative z-10 text-center space-y-6">
+						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">03</div>
+						<h4 class="font-black text-xl uppercase tracking-tighter">Estrategia</h4>
+						<p class="text-slate-400 font-medium">Diseñamos tu plan de ahorro personalizado.</p>
+					</div>
+					<div class="relative z-10 text-center space-y-6">
+						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">04</div>
+						<h4 class="font-black text-xl uppercase tracking-tighter">Gestión</h4>
+						<p class="text-slate-400 font-medium">Seguimiento mensual y tranquilidad total.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 8. SOBRE MÍ (Humanización) -->
+		<section class="py-32 px-6 bg-white" id="sobre-mi">
+			<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-24 items-center">
+				<div class="relative group">
+					<div class="absolute -inset-6 bg-blue-600 rounded-[4rem] -z-10 rotate-3 opacity-20 blur-2xl group-hover:rotate-6 transition-all duration-700"></div>
+					<img src="https://sc04.alicdn.com/kf/A3195799fed3b4d0490d9deb78284cbcbG.jpg" class="rounded-[3.5rem] shadow-2xl w-full max-w-lg object-cover" alt="Llorenç Belenguer" />
+					<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-3xl shadow-2xl border border-slate-50 hidden md:block">
+						<p class="text-xs font-black text-blue-600 uppercase tracking-widest mb-1">Especialista Senior</p>
+						<p class="text-2xl font-black text-slate-900">Llorenç Belenguer</p>
+					</div>
+				</div>
+				<div class="space-y-10">
+					<h2 class="text-sm font-black text-blue-600 uppercase tracking-widest">Filosofía de Trabajo</h2>
+					<h3 class="text-5xl md:text-7xl font-black text-slate-900 leading-[0.9] tracking-tighter">Cercanía real en un mundo digital.</h3>
+					<div class="space-y-6 text-xl text-slate-600 font-light leading-relaxed">
+						<p>Soy <span class="text-slate-900 font-bold">Graduado en Derecho y Ciencias Políticas</span> con Máster en Asesoría Fiscal Internacional. Mi forma de trabajar es radicalmente opuesta a la gestión masiva.</p>
+						<p>Gestiono personalmente cada caso, asegurando que entiendas por qué tomas cada decisión financiera. La confianza no se delega, se construye con resultados y disponibilidad.</p>
+					</div>
+					<div class="flex gap-10">
+						<div>
+							<div class="text-4xl font-black text-blue-600 italic">01</div>
+							<div class="text-[10px] font-black uppercase text-slate-400 tracking-[0.2em] mt-2 text-center">Asesor</div>
+						</div>
+						<div class="w-[1px] bg-slate-100"></div>
+						<p class="text-lg font-bold text-slate-800 flex items-center italic">"Tu tranquilidad es mi éxito."</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 9. FAQ (Acordeón SEO) -->
+		<section class="py-32 px-6 bg-slate-50 border-t border-slate-100">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-center text-4xl font-[900] mb-20 uppercase tracking-tighter">Despeja tus dudas</h2>
+				<div class="space-y-4">
+					<details class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm shadow-slate-200/50">
+						<summary class="flex justify-between items-center p-8 cursor-pointer font-black text-xl list-none hover:bg-blue-50/30 transition-colors">
+							¿Cómo funciona la primera consulta?
+							<span class="text-blue-600 group-open:rotate-180 transition-transform font-bold text-2xl">+</span>
+						</summary>
+						<div class="p-8 pt-2 text-slate-600 text-lg leading-relaxed">
+							Es gratuita y sin compromiso. Analizamos tu situación actual, revisamos posibles errores en presentaciones pasadas y te proponemos una estrategia de optimización inmediata.
+						</div>
+					</details>
+
+					<details class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm shadow-slate-200/50">
+						<summary class="flex justify-between items-center p-8 cursor-pointer font-black text-xl list-none hover:bg-blue-50/30 transition-colors">
+							¿Puedo cambiar de asesor fácilmente?
+							<span class="text-blue-600 group-open:rotate-180 transition-transform font-bold text-2xl">+</span>
+						</summary>
+						<div class="p-8 pt-2 text-slate-600 text-lg leading-relaxed">
+							Nos encargamos de todo el proceso. Solicitamos la información a tu antigua gestoría y realizamos el traspaso sin que tu negocio se detenga ni un segundo.
+						</div>
+					</details>
+
+					<details class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm shadow-slate-200/50">
+						<summary class="flex justify-between items-center p-8 cursor-pointer font-black text-xl list-none hover:bg-blue-50/30 transition-colors">
+							¿Trabajáis 100% online?
+							<span class="text-blue-600 group-open:rotate-180 transition-transform font-bold text-2xl">+</span>
+						</summary>
+						<div class="p-8 pt-2 text-slate-600 text-lg leading-relaxed">
+							Sí, utilizamos las mejores herramientas digitales para el intercambio de documentos. Sin embargo, para clientes en Valencia, incluimos reuniones presenciales para un seguimiento más profundo.
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+
+		<!-- 10. FINAL CTA (Impacto Máximo) -->
+		<section class="bg-blue-600 py-32 px-6 text-center relative overflow-hidden">
+			<div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+			<div class="relative z-10 max-w-5xl mx-auto">
+				<h2 class="text-5xl md:text-[8rem] font-[1000] text-white mb-10 tracking-tighter leading-none italic">¿HABLAMOS?</h2>
+				<p class="text-2xl md:text-4xl text-blue-100 mb-20 font-light max-w-3xl mx-auto">Toma hoy la decisión que salvará tus beneficios al cierre de año.</p>
+				<a href="https://wa.me/34697368100?text=Hola%20Llorenç,%20he%20visto%20la%20web%20y%20quiero%20empezar" 
+				   class="inline-flex items-center gap-6 bg-slate-950 text-white px-16 py-10 rounded-[2.5rem] text-2xl md:text-5xl font-black uppercase transition-all hover:scale-105 shadow-[0_40px_80px_rgba(0,0,0,0.3)]">
+					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 4Z"/></svg>
+					WhatsApp Directo
 				</a>
 			</div>
 		</section>
@@ -177,17 +342,11 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-	.hero-valencia {
-		background-attachment: fixed;
-		background-position: center;
-		background-size: cover;
-	}
-	@media (max-width: 768px) { .hero-valencia { background-attachment: scroll; } }
-	
 	.active-tab-v2 {
 		background-color: #1e3a8a !important; /* blue-900 */
 		color: white !important;
-		box-shadow: 0 10px 30px rgba(30, 58, 138, 0.2);
+		box-shadow: 0 10px 40px rgba(30, 58, 138, 0.3);
+		transform: scale(1.02);
 	}
 	.active-tab-v2 .text-sm { color: #93c5fd !important; }
 
@@ -196,11 +355,12 @@ import Layout from '../layouts/Layout.astro';
 		from { opacity: 0; transform: translateY(20px) scale(0.98); }
 		to { opacity: 1; transform: translateY(0) scale(1); }
 	}
-	.animate-slide-up {
-		animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+	
+	.animate-fade-in-up {
+		animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 	}
-	@keyframes slideUp {
-		from { opacity: 0; transform: translateY(40px); }
+	@keyframes fadeInUp {
+		from { opacity: 0; transform: translateY(60px); }
 		to { opacity: 1; transform: translateY(0); }
 	}
 </style>
