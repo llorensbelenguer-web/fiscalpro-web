@@ -73,7 +73,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- 3. INDICADORES DE CONFIANZA (SaaS B2B Style) -->
+		<!-- 3. INDICADORES DE CONFIANZA -->
 		<section class="py-32 px-6 bg-slate-50 border-y border-slate-100">
 			<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
 				<div class="p-8 bg-white rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:-translate-y-2 transition-transform">
@@ -99,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- 4. SERVICIOS (Problem-Solution-Benefit) -->
+		<!-- 4. SERVICIOS -->
 		<section class="py-32 px-6 max-w-7xl mx-auto" id="servicios">
 			<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
 				<div class="max-w-2xl">
@@ -175,97 +175,91 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- 5. CASOS DE ÉXITO (Social Proof) -->
-		<section class="py-32 px-6 bg-slate-50">
-			<div class="max-w-7xl mx-auto">
-				<h2 class="text-center text-4xl md:text-6xl font-black mb-20 tracking-tighter">Resultados <span class="text-blue-600 underline">Demostrados</span></h2>
-				<div class="grid md:grid-cols-3 gap-8">
-					<div class="p-10 bg-white rounded-3xl border border-slate-200 shadow-lg">
-						<div class="flex justify-between items-center mb-6">
-							<span class="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-black uppercase rounded-full">Freelance IT</span>
-							<span class="text-slate-300">2026</span>
-						</div>
-						<p class="font-bold text-xl mb-4 leading-tight">Recuperación de 3.400€ en deducciones de vivienda no aplicadas.</p>
-						<p class="text-slate-500 text-sm">Aplicamos el 30% de suministros afectos y revisión de gastos de inversión tecnológica.</p>
-					</div>
-					<div class="p-10 bg-white rounded-3xl border border-slate-200 shadow-lg scale-105 border-blue-500 relative z-10">
-						<div class="flex justify-between items-center mb-6">
-							<span class="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-black uppercase rounded-full">E-Commerce</span>
-							<span class="text-slate-300">2026</span>
-						</div>
-						<p class="font-bold text-xl mb-4 leading-tight">Evitamos sanción de 12.000€ en inspección por gastos de viaje.</p>
-						<p class="text-slate-500 text-sm">Justificación técnica y defensa jurídica ante la administración tributaria regional.</p>
-					</div>
-					<div class="p-10 bg-white rounded-3xl border border-slate-200 shadow-lg">
-						<div class="flex justify-between items-center mb-6">
-							<span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-black uppercase rounded-full">PYME Valencia</span>
-							<span class="text-slate-300">2026</span>
-						</div>
-						<p class="font-bold text-xl mb-4 leading-tight">Optimización del 15% en el Impuesto de Sociedades anual.</p>
-						<p class="text-slate-500 text-sm">Reestructuración de activos y aplicación de bonificaciones por creación de empleo.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 6. TESTIMONIOS (Infraestructura preparada) -->
+		<!-- 5. TESTIMONIOS (Bloques con Estrellas) -->
 		<section class="py-32 px-6 bg-white overflow-hidden">
-			<div class="max-w-7xl mx-auto text-center">
-				<h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-10 italic">Lo que dicen nuestros socios</h2>
-				<div class="flex justify-center gap-12 flex-wrap opacity-50">
-					<!-- Placeholders de testimonios -->
-					<div class="max-w-md text-left p-8 border-l-4 border-slate-200">
-						<p class="text-lg font-medium text-slate-800 mb-6 italic">"Buscaba a alguien que entendiera mi negocio digital y Llorenç superó mis expectativas con su atención directa."</p>
-						<div class="font-black text-xs uppercase tracking-widest text-slate-400">CEO · Startup Tecnológica</div>
-					</div>
-					<div class="max-w-md text-left p-8 border-l-4 border-slate-200">
-						<p class="text-lg font-medium text-slate-800 mb-6 italic">"Tener una reunión presencial al mes me da la tranquilidad que no encontraba en las gestorías 100% frías de internet."</p>
-						<div class="font-black text-xs uppercase tracking-widest text-slate-400">Propietario · Hostelería Valencia</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 7. CÓMO TRABAJAMOS (El Proceso) -->
-		<section class="py-32 px-6 bg-slate-950 text-white border-y border-white/5">
 			<div class="max-w-7xl mx-auto">
-				<h2 class="text-center text-5xl font-black mb-24 tracking-tighter uppercase">Tu camino al <span class="text-blue-500 italic">Éxito Fiscal</span></h2>
-				<div class="grid md:grid-cols-4 gap-16 relative">
-					<div class="hidden md:block absolute top-10 left-0 w-full h-[2px] bg-gradient-to-r from-blue-900 via-blue-500 to-blue-900 -z-0"></div>
+				<h2 class="text-center text-4xl md:text-6xl font-black mb-20 tracking-tighter uppercase">Lo que dicen <span class="text-blue-600 italic">nuestros clientes</span></h2>
+				
+				<div class="grid md:grid-cols-2 gap-8 mb-20">
+					<!-- Maricarmen -->
+					<div class="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+						<div class="flex gap-1 mb-6">
+							{[1,2,3,4,5].map(() => (
+								<svg class="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+							))}
+						</div>
+						<p class="text-xl font-medium text-slate-800 mb-8 italic leading-relaxed">
+							"Excelente servicio y una atención impecable durante todo el proceso de mi declaración de Renta. Destaco especialmente su profesionalidad, claridad para explicar cada paso y la confianza que trasmite en todo momento. Sin duda un gestor altamente recomendable."
+						</p>
+						<div class="flex items-center gap-4">
+							<div class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center font-black text-white text-xl shadow-lg">M</div>
+							<div>
+								<p class="font-black text-slate-900 text-lg uppercase tracking-tight">Maricarmen</p>
+								<p class="text-xs text-blue-600 font-bold uppercase tracking-widest">Cliente Verificado</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Martín -->
+					<div class="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+						<div class="flex gap-1 mb-6">
+							{[1,2,3,4,5].map(() => (
+								<svg class="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+							))}
+						</div>
+						<p class="text-xl font-medium text-slate-800 mb-8 italic leading-relaxed">
+							"Muy satisfecho con la declaración de la renta. El trato fue cercano, profesional y eficiente, resolviendo mis dudas con toda claridad y haciendo que el proceso fuera sencillo. Totalmente recomendable."
+						</p>
+						<div class="flex items-center gap-4">
+							<div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center font-black text-white text-xl shadow-lg">M</div>
+							<div>
+								<p class="font-black text-slate-900 text-lg uppercase tracking-tight">Martín</p>
+								<p class="text-xs text-blue-600 font-bold uppercase tracking-widest">Cliente Verificado</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Formulario Interactivo -->
+				<div class="max-w-3xl mx-auto bg-slate-950 p-12 md:p-20 rounded-[4rem] shadow-2xl relative overflow-hidden">
+					<div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 opacity-10 blur-[100px]"></div>
+					<h3 class="text-4xl font-black text-white mb-6 text-center">¿Eres cliente? <span class="text-blue-500 italic">Danos tu opinión</span></h3>
+					<p class="text-slate-400 text-center text-lg mb-12">Tu feedback es el motor de nuestra excelencia.</p>
 					
-					<div class="relative z-10 text-center space-y-6">
-						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">01</div>
-						<h4 class="font-black text-xl uppercase tracking-tighter">Contacto</h4>
-						<p class="text-slate-400 font-medium">WhatsApp directo para agendar tu primera sesión.</p>
-					</div>
-					<div class="relative z-10 text-center space-y-6">
-						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">02</div>
-						<h4 class="font-black text-xl uppercase tracking-tighter">Auditoría</h4>
-						<p class="text-slate-400 font-medium">Revisamos tus últimos 2 años de impuestos gratis.</p>
-					</div>
-					<div class="relative z-10 text-center space-y-6">
-						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">03</div>
-						<h4 class="font-black text-xl uppercase tracking-tighter">Estrategia</h4>
-						<p class="text-slate-400 font-medium">Diseñamos tu plan de ahorro personalizado.</p>
-					</div>
-					<div class="relative z-10 text-center space-y-6">
-						<div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-[0_0_40px_rgba(37,99,235,0.4)]">04</div>
-						<h4 class="font-black text-xl uppercase tracking-tighter">Gestión</h4>
-						<p class="text-slate-400 font-medium">Seguimiento mensual y tranquilidad total.</p>
-					</div>
+					<form class="space-y-8" action="https://formspree.io/f/mqakvjnd" method="POST">
+						<div class="grid md:grid-cols-2 gap-8">
+							<div class="space-y-2">
+								<label class="text-xs font-black uppercase tracking-widest text-slate-500 ml-4">Nombre Completo</label>
+								<input type="text" name="name" placeholder="Tu Nombre" required class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl text-white outline-none focus:border-blue-500 transition-colors" />
+							</div>
+							<div class="space-y-2">
+								<label class="text-xs font-black uppercase tracking-widest text-slate-500 ml-4">Valoración</label>
+								<select name="rating" required class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl text-white outline-none focus:border-blue-500 transition-colors cursor-pointer">
+									<option value="5" class="text-slate-900">⭐⭐⭐⭐⭐ Excelente</option>
+									<option value="4" class="text-slate-900">⭐⭐⭐⭐ Muy bueno</option>
+									<option value="3" class="text-slate-900">⭐⭐⭐ Bueno</option>
+								</select>
+							</div>
+						</div>
+						<div class="space-y-2">
+							<label class="text-xs font-black uppercase tracking-widest text-slate-500 ml-4">Tu Experiencia</label>
+							<textarea name="comment" rows="5" placeholder="Cuéntanos cómo ha sido trabajar con nosotros..." required class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl text-white outline-none focus:border-blue-500 transition-colors resize-none"></textarea>
+						</div>
+						<button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-black py-6 rounded-2xl uppercase tracking-[0.2em] text-sm transition-all transform hover:scale-[1.02] shadow-xl shadow-blue-900/20">Publicar mi Opinión</button>
+					</form>
 				</div>
 			</div>
 		</section>
 
-		<!-- 8. SOBRE MÍ (Humanización) -->
-		<section class="py-32 px-6 bg-white" id="sobre-mi">
+		<!-- 6. SOBRE MÍ (Humanización) -->
+		<section class="py-32 px-6 bg-slate-50" id="sobre-mi">
 			<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-24 items-center">
 				<div class="relative group">
 					<div class="absolute -inset-6 bg-blue-600 rounded-[4rem] -z-10 rotate-3 opacity-20 blur-2xl group-hover:rotate-6 transition-all duration-700"></div>
 					<img src="https://sc04.alicdn.com/kf/A3195799fed3b4d0490d9deb78284cbcbG.jpg" class="rounded-[3.5rem] shadow-2xl w-full max-w-lg object-cover" alt="Llorenç Belenguer" />
-					<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-3xl shadow-2xl border border-slate-50 hidden md:block">
+					<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-3xl shadow-2xl border border-slate-50 hidden md:block text-center">
 						<p class="text-xs font-black text-blue-600 uppercase tracking-widest mb-1">Especialista Senior</p>
-						<p class="text-2xl font-black text-slate-900">Llorenç Belenguer</p>
+						<p class="text-2xl font-black text-slate-900 italic">Llorenç Belenguer</p>
 					</div>
 				</div>
 				<div class="space-y-10">
@@ -287,45 +281,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- 9. FAQ (Acordeón SEO) -->
-		<section class="py-32 px-6 bg-slate-50 border-t border-slate-100">
-			<div class="max-w-4xl mx-auto">
-				<h2 class="text-center text-4xl font-[900] mb-20 uppercase tracking-tighter">Despeja tus dudas</h2>
-				<div class="space-y-4">
-					<details class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm shadow-slate-200/50">
-						<summary class="flex justify-between items-center p-8 cursor-pointer font-black text-xl list-none hover:bg-blue-50/30 transition-colors">
-							¿Cómo funciona la primera consulta?
-							<span class="text-blue-600 group-open:rotate-180 transition-transform font-bold text-2xl">+</span>
-						</summary>
-						<div class="p-8 pt-2 text-slate-600 text-lg leading-relaxed">
-							Es gratuita y sin compromiso. Analizamos tu situación actual, revisamos posibles errores en presentaciones pasadas y te proponemos una estrategia de optimización inmediata.
-						</div>
-					</details>
-
-					<details class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm shadow-slate-200/50">
-						<summary class="flex justify-between items-center p-8 cursor-pointer font-black text-xl list-none hover:bg-blue-50/30 transition-colors">
-							¿Puedo cambiar de asesor fácilmente?
-							<span class="text-blue-600 group-open:rotate-180 transition-transform font-bold text-2xl">+</span>
-						</summary>
-						<div class="p-8 pt-2 text-slate-600 text-lg leading-relaxed">
-							Nos encargamos de todo el proceso. Solicitamos la información a tu antigua gestoría y realizamos el traspaso sin que tu negocio se detenga ni un segundo.
-						</div>
-					</details>
-
-					<details class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm shadow-slate-200/50">
-						<summary class="flex justify-between items-center p-8 cursor-pointer font-black text-xl list-none hover:bg-blue-50/30 transition-colors">
-							¿Trabajáis 100% online?
-							<span class="text-blue-600 group-open:rotate-180 transition-transform font-bold text-2xl">+</span>
-						</summary>
-						<div class="p-8 pt-2 text-slate-600 text-lg leading-relaxed">
-							Sí, utilizamos las mejores herramientas digitales para el intercambio de documentos. Sin embargo, para clientes en Valencia, incluimos reuniones presenciales para un seguimiento más profundo.
-						</div>
-					</details>
-				</div>
-			</div>
-		</section>
-
-		<!-- 10. FINAL CTA (Impacto Máximo) -->
+		<!-- 10. FINAL CONVERSION -->
 		<section class="bg-blue-600 py-32 px-6 text-center relative overflow-hidden">
 			<div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
 			<div class="relative z-10 max-w-5xl mx-auto">
@@ -342,51 +298,16 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-	.active-tab-v2 {
-		background-color: #1e3a8a !important; /* blue-900 */
-		color: white !important;
-		box-shadow: 0 10px 40px rgba(30, 58, 138, 0.3);
-		transform: scale(1.02);
+	.hero-valencia {
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
 	}
-	.active-tab-v2 .text-sm { color: #93c5fd !important; }
-
+	@media (max-width: 768px) { .hero-valencia { background-attachment: scroll; } }
+	
 	.tab-pane { animation: fadeInScale 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
 	@keyframes fadeInScale {
 		from { opacity: 0; transform: translateY(20px) scale(0.98); }
 		to { opacity: 1; transform: translateY(0) scale(1); }
 	}
-	
-	.animate-fade-in-up {
-		animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-	}
-	@keyframes fadeInUp {
-		from { opacity: 0; transform: translateY(60px); }
-		to { opacity: 1; transform: translateY(0); }
-	}
 </style>
-
-<script is:inline>
-	function initTabsV2() {
-		const buttons = document.querySelectorAll('.tab-btn');
-		const panes = document.querySelectorAll('.tab-pane');
-
-		buttons.forEach(btn => {
-			btn.addEventListener('click', () => {
-				const target = btn.getAttribute('data-target');
-				buttons.forEach(b => b.classList.remove('active-tab-v2'));
-				btn.classList.add('active-tab-v2');
-				panes.forEach(p => {
-					if (p.id === target) {
-						p.classList.remove('hidden');
-						p.classList.add('block');
-					} else {
-						p.classList.add('hidden');
-						p.classList.remove('block');
-					}
-				});
-			});
-		});
-	}
-	document.addEventListener('astro:page-load', initTabsV2);
-	initTabsV2();
-</script>
